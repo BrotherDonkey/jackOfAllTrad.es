@@ -1,0 +1,42 @@
+
+.outer-nav {
+  width: 100%;
+  background-color: $green;
+}
+
+.nav-cont {
+  width: 100%;
+  text-transform: uppercase;
+  display: inline;
+}
+
+img {
+  display: inline-block;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link {
+  border: 1px solid $white;
+}
+
+.nav-link.one {
+  background-color: $yellow;
+}
+
+.nav-link.two {
+  background-color: $orange;
+}
+
+.nav-link.three {
+  background-color: $red;
+}
+
+.nav-link.four {
+  background-color: $blue;
+}
+
+.nav-link.five {}
+.nav-link.six {}

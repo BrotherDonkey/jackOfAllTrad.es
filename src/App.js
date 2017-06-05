@@ -10,7 +10,10 @@ import {
 import Home from './components/Home';
 import Header from './components/Header';
 import About from './components/About';
-import Novels from './components/Novels';
+import Fiction from './components/Fiction';
+import FileNotFound from './components/FileNotFound';
+import WebDev from './components/WebDev';
+
 
 
 //import styles
@@ -23,9 +26,13 @@ class App extends Component {
         <div className="App">
              <div className="container">
                  <Header />
+                 <Switch>
                    <Route exact path="/" component={Home} />
-                   <Route path="/about" render={ () => <About /> } />
-                   <Route path="/novels" component={Novels} />
+                   <Route path="/about" render={ () => <About title="About" /> } />
+                   <Route path="/webdev" component={WebDev} />
+                   <Route path="/fiction" component={Fiction} />
+                   <Route component={FileNotFound} />
+                 </Switch>
              </div>
         </div>
       </BrowserRouter>

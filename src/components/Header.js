@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Header = () => (
-      <nav>
-        <h2>Will Bjorn</h2>
-        <div class="navigation">
-          <a href="/" className="nav-link">Home</a>
-          <a href="/about" className="nav-link">About</a>
-          <a href="novels" className="nav-link">Novels</a>
-          <a href="#" className="nav-link"></a>
+      <nav className="outer-nav">
+        <img src="http://via.placeholder.com/100x100" alt="placeholder" />
+        <div className="nav-cont">
+          <a href="/" className="nav-link one">Home</a>
+          <a href="/about" className="nav-link two">About</a>
+          <a href="/webdev" className="nav-link three">WebDev</a>
+          <a href="/fiction" className="nav-link four">Fiction</a>
         </div>
       </nav>
 );

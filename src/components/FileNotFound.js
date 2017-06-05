@@ -1,10 +1,10 @@
 import React from 'react';
 
-const NotFound = () => (
-  <div className="main-content not-found">
-    <i className="material-icons icn-error">error_outline</i>
-    <h2>Page Not Found</h2>
+const FileNotFound = ({ location }) => (
+  <div>
+    <h3>No match for <code>{location.pathname}</code></h3>
   </div>
 );
 
-export default NotFound;
+
+export default FileNotFound;
