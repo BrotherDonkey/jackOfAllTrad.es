@@ -9,6 +9,8 @@ export default class Home extends Component {
         <p>This is home.</p>
         <hr />
         <h3>Home Section 2</h3>
+        <h4>Some shit h4</h4>
+        <p>Some paragraph text</p>
         <form onSubmit={this.handleSubmit}>
           <input type="text" placeholder="Name" />
           <input type="text" placeholder="Topic" />

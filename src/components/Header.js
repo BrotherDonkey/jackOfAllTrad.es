@@ -1,13 +1,15 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => (
       <nav className="outer-nav">
-        <img src="http://via.placeholder.com/100x100" alt="placeholder" />
+        <NavLink className="logo-cont" exact to="/">
+          <img src={"../images/WB-white.svg"} className="header-icon" alt={"placeholder"} />
+        </NavLink>
         <div className="nav-cont">
-          <a href="/" className="nav-link one">Home</a>
-          <a href="/about" className="nav-link two">About</a>
-          <a href="/webdev" className="nav-link three">WebDev</a>
-          <a href="/fiction" className="nav-link four">Fiction</a>
+          <NavLink to="/about" id="about-nav-link" className="nav-link two">about</NavLink>
+          <NavLink to="/webdev" id="webdev-nav-link" className="nav-link three">web dev</NavLink>
+          <NavLink to="/writing" id="writing-nav-link" className="nav-link four">writing</NavLink>
         </div>
       </nav>
 );

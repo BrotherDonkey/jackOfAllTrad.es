@@ -6,13 +6,16 @@ import {
 } from 'react-router-dom';
 
 
+
+
 //import app components
 import Home from './components/Home';
 import Header from './components/Header';
 import About from './components/About';
-import Fiction from './components/Fiction';
+import Writing from './components/Writing';
 import FileNotFound from './components/FileNotFound';
 import WebDev from './components/WebDev';
+
 
 
 
@@ -30,7 +33,7 @@ class App extends Component {
                    <Route exact path="/" component={Home} />
                    <Route path="/about" render={ () => <About title="About" /> } />
                    <Route path="/webdev" component={WebDev} />
-                   <Route path="/fiction" component={Fiction} />
+                   <Route path="/writing" component={Writing} />
                    <Route component={FileNotFound} />
                  </Switch>
              </div>
