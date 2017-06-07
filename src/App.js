@@ -11,6 +11,7 @@ import {
 //import app components
 import Home from './components/Home';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import About from './components/About';
 import Writing from './components/Writing';
 import FileNotFound from './components/FileNotFound';
@@ -27,15 +28,18 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-             <div className="container">
+             <div className="outer-cont">
                  <Header />
-                 <Switch>
-                   <Route exact path="/" component={Home} />
-                   <Route path="/about" render={ () => <About title="About" /> } />
-                   <Route path="/webdev" component={WebDev} />
-                   <Route path="/writing" component={Writing} />
-                   <Route component={FileNotFound} />
-                 </Switch>
+                 <div className="content-cont">
+                   <Switch>
+                     <Route exact path="/" component={Home} />
+                     <Route path="/about" render={ () => <About title="About" /> } />
+                     <Route path="/webdev" component={WebDev} />
+                     <Route path="/writing" component={Writing} />
+                     <Route component={FileNotFound} />
+                   </Switch>
+                 </div>
+                 <Footer />
              </div>
         </div>
       </BrowserRouter>
