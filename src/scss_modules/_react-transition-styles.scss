@@ -1,0 +1,36 @@
+.transition {
+  width: 100%;
+}
+
+
+
+/*
+============================================================================
+*****REACT CSS TRANSITION GROUP STYLES*****
+============================================================================
+*/
+
+
+.headline-animation-appear {
+  opacity: 0;
+  transform: translateY(100%);
+
+}
+
+.headline-animation-appear.headline-animation-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in .5s, transform 1s ease-in;
+}
+
+///////////// as yet unused styles for headline animation //////////////////
+
+.headline-animation-enter {}
+
+.headline-animation-enter.headline-animation-enter-active {}
+
+.headline-animation-leave {}
+
+.headline-animation-leave.headline-animation-leave-active {}
+
+//==========================================================================
