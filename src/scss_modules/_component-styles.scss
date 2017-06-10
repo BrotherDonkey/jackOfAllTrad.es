@@ -14,11 +14,15 @@ for use later when  it may come to adding some transition / animations to these
 }
 
 .front,.back,.top,.bottom,.right,.left {
+
 }
 
 .box-side {
 
   .front {
+    background-color: blue;
+    transform: translateX(300deg);
+    z-index: 100;
   }
 
   .back {
@@ -36,4 +40,10 @@ for use later when  it may come to adding some transition / animations to these
   .bottom {
   }
 
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  background: red;
 }

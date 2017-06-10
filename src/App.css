@@ -91,3 +91,43 @@ navigation colors
 .nav-cont a.active {
   background-color: #fffbfc;
   color: black; }
+
+.footer-link {
+  text-decoration: none;
+  margin: 10px; }
+
+.transition {
+  width: 100%; }
+
+/*
+============================================================================
+*****REACT CSS TRANSITION GROUP STYLES*****
+============================================================================
+*/
+.headline-animation-appear {
+  opacity: 0;
+  transform: translateY(100%); }
+
+.headline-animation-appear.headline-animation-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in .5s, transform 1s ease-in; }
+
+/*
+
+STYLES FOR 3D BOX COMPONENT FOUND IN HEADER
+
+for use later when  it may come to adding some transition / animations to these
+*/
+.box-link-cont {
+  perspective: 600px; }
+
+.box-side .front {
+  background-color: blue;
+  transform: translateX(300deg);
+  z-index: 100; }
+
+.square {
+  height: 100px;
+  width: 100px;
+  background: red; }
