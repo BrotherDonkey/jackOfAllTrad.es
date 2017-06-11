@@ -1,22 +1,69 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif");
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Noto Serif', serif; }
-
-p {
-  font-family: 'Noto Sans', sans-serif; }
-
-.nav-cont a {
   font-family: 'Noto Serif', serif;
-  font-size: 1rem;
-  letter-spacing: 1px; }
-
-.logo-cont, .site-name {
-  text-decoration: none;
-  color: white;
-  padding: 0;
   margin: 0;
-  letter-spacing: 1px; }
+  padding: 0; }
 
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  h1 {
+    font-size: 2.5rem; }
+  h2 {
+    font-size: 2.25rem; }
+  h3 {
+    font-size: 2rem; }
+  h4 {
+    font-size: 1.75rem; }
+  h5 {
+    font-size: 1.5rem; }
+  h6 {
+    font-size: 1.25rem; }
+  p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem; }
+  .nav-cont a {
+    font-family: 'Noto Serif', serif;
+    font-size: 1rem;
+    letter-spacing: 1px; }
+  .logo-cont, .site-name {
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px; } }
+
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 5rem; }
+  h2 {
+    font-size: 4rem; }
+  h3 {
+    font-size: 3.5rem; }
+  h4 {
+    font-size: 3rem; }
+  h5 {
+    font-size: 2.5rem; }
+  h6 {
+    font-size: 2rem; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 6rem; }
+  h2 {
+    font-size: 5rem; }
+  h3 {
+    font-size: 4rem; }
+  h4 {
+    font-size: 3rem; }
+  h5 {
+    font-size: 2rem; }
+  h6 {
+    font-size: 1.5rem; } }
+
+/* Large Devices, Wide Screens */
 /*
 
 main colors
@@ -27,75 +74,138 @@ main colors
 navigation colors
 
 */
-.outer-cont {
-  background: url("/images/anime-sky.jpg");
-  height: 100vh;
-  background-size: cover; }
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .outer-cont {
+    background: url("/images/anime-sky.jpg");
+    height: 100vh;
+    background-size: cover; }
+  .content-cont, footer {
+    background: #fffbfc;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(75, 75, 75, 0.5);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(75, 75, 75, 0.5);
+    box-shadow: 0px 0px 10px 2px rgba(75, 75, 75, 0.5); }
+  .content-cont {
+    min-height: 50vh; }
+  .section-desc {
+    white-space: pre-wrap; }
+  .page-summary {
+    width: 100%;
+    margin: 10px; }
+  .page-title-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center; }
+  .page-title-cont h3 {
+    color: #124e78; } }
 
-.content-cont, footer {
-  background: #fffbfc;
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
   width: 70%;
   margin: 2.5% 5%;
-  padding: 1% 2.5%;
-  -webkit-box-shadow: 0px 0px 10px 2px rgba(75, 75, 75, 0.5);
-  -moz-box-shadow: 0px 0px 10px 2px rgba(75, 75, 75, 0.5);
-  box-shadow: 0px 0px 10px 2px rgba(75, 75, 75, 0.5); }
+  padding: 1% 2.5%; }
 
-.content-cont {
-  min-height: 50vh; }
+/* Large Devices, Wide Screens */
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .outer-nav {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    perspective: 700px;
+    margin-left: auto;
+    margin-right: auto; }
+  .nav-cont {
+    margin: 2.5% 0;
+    display: flex;
+    flex-direction: row; }
+  .logo-cont {
+    width: 70%;
+    margin-top: 2.5%; }
+  .site-name {
+    margin: 2.5% 0 0 0;
+    text-align: center; }
+  .header-icon {
+    width: 100px;
+    height: 100px; }
+  .nav-link {
+    text-decoration: none;
+    background: #011638;
+    color: #fffbfc;
+    text-align: center;
+    margin: 10px 5px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    transition: all .5s ease-in; }
+  .nav-link:hover {
+    background: #124e78;
+    transition: background 0s; }
+  .nav-link.active {
+    -webkit-box-shadow: 0px 0px 10px 3px #fafafa;
+    -moz-box-shadow: 0px 0px 10px 3px #fafafa;
+    box-shadow: 0px 0px 10px 3px #fafafa; }
+  .nav-cont a.active {
+    background-color: #fffbfc;
+    color: black; } }
 
-.section-desc {
-  white-space: pre-wrap; }
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .outer-nav {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    perspective: 700px;
+    margin-left: auto;
+    margin-right: auto; }
+  .nav-cont {
+    margin: 2.5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative; }
+  .logo-cont {
+    width: 70%;
+    margin-top: 2.5%; }
+  .site-name {
+    margin: 2.5% 0 0 0;
+    text-align: left; }
+  .nav-link {
+    text-decoration: none;
+    background: #011638;
+    color: #fffbfc;
+    text-align: center;
+    margin: 15px 0 0 0;
+    padding: 5px 15px;
+    border-radius: 2px;
+    transition: .5s ease-in; } }
 
-.outer-nav {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  perspective: 700px; }
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .footer {
+    display: flex; }
+  .footer-link {
+    text-decoration: none;
+    margin: 10px; } }
 
-.nav-cont {
-  margin: 2.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: relative; }
-
-.logo-cont {
-  width: 70%;
-  margin-top: 2.5%; }
-
-.site-name {
-  font-size: 6.5rem;
-  margin: 2.5% 5%; }
-
-.header-icon {
-  width: 100px;
-  height: 100px; }
-
-.nav-link {
-  text-decoration: none;
-  background: #011638;
-  color: #fffbfc;
-  text-align: center;
-  margin-top: 15px;
-  padding: 5px 15px;
-  border-radius: 2px;
-  transition: .5s ease-in; }
-
-.nav-link.active {
-  -webkit-box-shadow: 0px 0px 10px 3px #fafafa;
-  -moz-box-shadow: 0px 0px 10px 3px #fafafa;
-  box-shadow: 0px 0px 10px 3px #fafafa; }
-
-.nav-cont a.active {
-  background-color: #fffbfc;
-  color: black; }
-
-.footer-link {
-  text-decoration: none;
-  margin: 10px; }
-
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/*==========  Non-Mobile First Method  ==========*/
 .transition {
   width: 100%; }
 
@@ -112,6 +222,13 @@ navigation colors
   opacity: 1;
   transform: translateY(0);
   transition: opacity 1s ease-in .5s, transform 1s ease-in; }
+
+.page-title-animation-appear {
+  opacity: 0; }
+
+.page-title-animation-appear.page-title-animation-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in; }
 
 /*
 

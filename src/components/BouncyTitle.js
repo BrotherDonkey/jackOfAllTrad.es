@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Component } from 'react';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { CSSTransitionGroup } from 'react-transition-group'
 // import ReactCSSTransition from 'react-addons-css-transition-group';
 
@@ -16,7 +16,7 @@ class BouncyTitle extends React.Component {
         transitionAppear={true}
         transitionAppearTimeout={1000}
         >
-        <h2 className="site-name">{this.props.title}</h2>
+        <h1 className="site-name">{this.props.title}</h1>
       </CSSTransitionGroup>
     )
   }

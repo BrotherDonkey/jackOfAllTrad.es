@@ -1,23 +1,131 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif');
 
+
+
+
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Noto Serif', serif;
-}
-
-p {
-  font-family: 'Noto Sans', sans-serif;
-}
-
-.nav-cont a {
-  font-family: 'Noto Serif', serif;
-  font-size: 1rem;
-  letter-spacing: 1px;
-}
-
-.logo-cont,.site-name {
-  text-decoration: none;
-  color: white;
-  padding: 0;
   margin: 0;
-  letter-spacing: 1px;
+  padding: 0;
+}
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  h6 {
+    font-size: 1.25rem;
+  }
+
+
+  p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+  }
+
+  .nav-cont a {
+    font-family: 'Noto Serif', serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .logo-cont,.site-name {
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-size: 3.5rem;
+    }
+
+    h4 {
+      font-size: 3rem;
+    }
+
+    h5 {
+      font-size: 2.5rem;
+    }
+
+    h6 {
+      font-size: 2rem;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  h6 {
+    font-size: 1.5rem;
+  }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }
