@@ -113,6 +113,24 @@
       min-height: 23vh;
     }
 
+    .svg-flex-cont {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 98%;
+      padding: 1%;
+      margin: 0;
+    }
+
+    .svg-icon {
+      max-width: 30px;
+      max-height: 30px;
+    }
+
+
+
+
+
 
     .card p,h1,h2,h3,h4,h5,h6 {
       margin: 0;
@@ -145,8 +163,6 @@
     flex-direction: row;
   }
 
-  .card {
-  }
 
   .card-upper-section {
     min-height: 15vh;

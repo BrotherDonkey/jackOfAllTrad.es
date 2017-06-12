@@ -1,10 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Spring } from 'react-motion'
 
 //import components
 import BouncyTitle from './BouncyTitle';
-import Box from './Box';
 
 
 const Header = () => (

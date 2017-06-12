@@ -1,13 +1,12 @@
 import React from 'react';
 import { CSSTransitionGroup } from 'react-transition-group'
 import { Link } from 'react-router-dom';
-import MtSvgLines from 'react-mt-svg-lines';
 
 //component imports
-import LinkedPanel from './LinkedPanel';
 import PageTitle from './PageTitle';
 import SubNav from './SubNav';
 import Card from './Card';
+import SvgFlexContainer from './SvgFlexContainer';
 import Bear2svg from './svg-components/Bear2svg';
 import Arrowsvg from './svg-components/Arrowsvg';
 import BrowserSVG from './svg-components/BrowserSVG';

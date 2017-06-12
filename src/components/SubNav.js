@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 
 const SubNav = (props) => (
     <ul class="sub-nav-ul">
-      <li class="sub-nav-item">something</li>
-      <li class="sub-nav-item">Something</li>
+      <NavLink to="/about" class="sub-nav-item">something</NavLink>
+      <NavLink to="/about" class="sub-nav-item">Something</NavLink>
     </ul>
 );
 

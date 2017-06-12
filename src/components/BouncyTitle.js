@@ -1,8 +1,5 @@
 import React from 'react';
-// import { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 import { CSSTransitionGroup } from 'react-transition-group'
-// import ReactCSSTransition from 'react-addons-css-transition-group';
 
 class BouncyTitle extends React.Component {
   render(props) {

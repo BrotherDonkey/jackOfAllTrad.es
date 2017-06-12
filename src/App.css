@@ -164,6 +164,16 @@ more colors
     padding: 0;
     border: solid 1px #124e78;
     min-height: 23vh; }
+  .svg-flex-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 98%;
+    padding: 1%;
+    margin: 0; }
+  .svg-icon {
+    max-width: 30px;
+    max-height: 30px; }
   .card p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 10px 10px 5px 10px; }

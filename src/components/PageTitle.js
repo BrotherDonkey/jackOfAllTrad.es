@@ -1,9 +1,7 @@
 import React from 'react';
-import {Component} from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 
 //component exports
-import Bear2svg from './svg-components/Bear2svg.js';
 
 
 export default class PageTitle extends React.Component {
@@ -26,7 +24,7 @@ export default class PageTitle extends React.Component {
       >
         {this.props.icon}
         <h2> {this.props.title} </h2>
-        
+
     </CSSTransitionGroup>
   )
   }

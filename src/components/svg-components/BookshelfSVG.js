@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function BookshelfSVG(props) {
   return (
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.438 512.438" style={{enableBackground: 'new 0 0 512.438 512.438'}} xmlSpace="preserve" width="512.438" height="512.438" {...props}>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.438 512.438" style={{enableBackground: 'new 0 0 512.438 512.438'}} xmlSpace="preserve" width="512.438" height="512.438" {...props}>
       <g>
         <g>
           <path style={{fill: '#FF4F19'}} d="M424,116.219h-40c-4.418,0-8,3.582-8,8v216h56v-216C432,119.801,428.418,116.219,424,116.219z" />

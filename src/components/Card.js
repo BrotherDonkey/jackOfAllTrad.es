@@ -1,7 +1,12 @@
 import React from 'react';
 import { CSSTransitionGroup } from 'react-transition-group'
-import { Link } from 'react-router-dom';
-//above?
+
+//components
+import SvgFlexContainer from './SvgFlexContainer';
+import BookshelfSVG from './svg-components/BookshelfSVG';
+
+
+
 
 export default class Card extends React.Component {
   constructor(props){
@@ -34,6 +39,13 @@ export default class Card extends React.Component {
             <h3 className="card-headline">{this.props.title}</h3>
           </div>
           <div className="card-lower-section">
+            <SvgFlexContainer>
+              <BookshelfSVG height="100" width="100" className="svg-icon"/>
+              <BookshelfSVG height="100" width="100" className="svg-icon"/>
+              <BookshelfSVG height="100" width="100" className="svg-icon"/>
+              <BookshelfSVG height="100" width="100" className="svg-icon"/>
+              <BookshelfSVG height="100" width="100" className="svg-icon"/>
+            </SvgFlexContainer>
             <h5>{this.props.subheadline}</h5>
             <p>{this.props.text}</p>
           </div>
