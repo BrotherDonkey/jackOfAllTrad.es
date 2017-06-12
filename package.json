@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
+    "normalize.css": "^7.0.0",
     "react": "^15.5.4",
     "react-anime": "^0.3.4",
     "react-dom": "^15.5.4",

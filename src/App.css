@@ -4,6 +4,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
+p {
+  font-family: 'Noto Sans', sans-serif; }
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   h1 {
@@ -38,15 +41,15 @@ h1, h2, h3, h4, h5, h6 {
   h1 {
     font-size: 5rem; }
   h2 {
-    font-size: 4rem; }
-  h3 {
     font-size: 3.5rem; }
-  h4 {
+  h3 {
     font-size: 3rem; }
-  h5 {
+  h4 {
     font-size: 2.5rem; }
+  h5 {
+    font-size: 2rem; }
   h6 {
-    font-size: 2rem; } }
+    font-size: 1.5rem; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -71,14 +74,17 @@ main colors
 */
 /*
 
-navigation colors
+more colors
 
 */
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
+  .main-content {
+    margin: 5px;
+    padding: 5px; }
   .outer-cont {
-    background: url("/images/anime-sky.jpg");
-    height: 100vh;
+    background-image: linear-gradient(to top, rgba(242, 1, 5, 0.8), rgba(1, 22, 56, 0.8)), url("/images/anime-sky.jpg");
+    min-height: 100vh;
     background-size: cover; }
   .content-cont, footer {
     background: #fffbfc;
@@ -95,23 +101,95 @@ navigation colors
   .page-summary {
     width: 100%;
     margin: 10px; }
+  .page-summary p {
+    padding: 5px; }
   .page-title-cont {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     text-align: center; }
-  .page-title-cont h3 {
-    color: #124e78; } }
+  .page-title-cont h1, h2, h3, h4, h5, h6 {
+    color: #124e78; }
+  .card-cont {
+    display: flex;
+    flex-direction: column; }
+  .card-link {
+    text-decoration: none;
+    color: inherit; }
+  .card {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(75, 75, 75, 0.5);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(75, 75, 75, 0.5);
+    box-shadow: 0px 0px 10px 2px rgba(75, 75, 75, 0.5); }
+  .card:hover {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(110, 14, 10, 0.8);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(110, 14, 10, 0.8);
+    box-shadow: 0px 0px 10px 2px rgba(110, 14, 10, 0.8); }
+  .card-upper-section {
+    border-radius: 3px 3px 0 0;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: solid 1px #124e78;
+    background-color: #124e78;
+    min-height: 23vh; }
+  .card-icon {
+    position: absolute;
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 10px; }
+  .card-headline {
+    position: absolute;
+    color: #fffbfc;
+    padding: 10px;
+    text-align: center;
+    z-index: 3;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 15vh;
+    text-shadow: 0 0 0 black, 0 0 1px black; }
+  .card-lower-section {
+    border-radius: 0 0 3px 3px;
+    margin: 0;
+    padding: 0;
+    border: solid 1px #124e78;
+    min-height: 23vh; }
+  .card p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 10px 10px 5px 10px; }
+  .card h5 {
+    font-size: 1rem; }
+  .card p {
+    font-size: .8rem; } }
 
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  width: 70%;
-  margin: 2.5% 5%;
-  padding: 1% 2.5%; }
+@media only screen and (min-width: 768px) {
+  .card-cont {
+    flex-direction: row; }
+  .card-upper-section {
+    min-height: 15vh; }
+  .card-headline {
+    top: 8vh;
+    font-size: 2.5rem; }
+  .card-lower-section {
+    min-height: 15vh; }
+  .card h5 {
+    font-size: 1.2rem; }
+  .card p {
+    font-size: .8rem; } }
 
+/* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
@@ -139,7 +217,6 @@ navigation colors
     height: 100px; }
   .nav-link {
     text-decoration: none;
-    background: #011638;
     color: #fffbfc;
     text-align: center;
     margin: 10px 5px;
@@ -183,7 +260,6 @@ navigation colors
     text-align: left; }
   .nav-link {
     text-decoration: none;
-    background: #011638;
     color: #fffbfc;
     text-align: center;
     margin: 15px 0 0 0;

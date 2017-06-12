@@ -1,8 +1,15 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+
+    .main-content {
+      margin: 5px;
+      padding: 5px;
+    }
+
     .outer-cont {
-      background: url("/images/anime-sky.jpg");
-      height: 100vh;
+      // background-image: linear-gradient(to top, $secondary-color-80, $primary-color-80), url("/images/anime-sky.jpg");
+      background-image: linear-gradient(to top, $yellow-80, $blue-80), url("/images/anime-sky.jpg");
+      min-height: 100vh;
       background-size: cover;
     }
 
@@ -26,18 +33,103 @@
       margin: 10px;
     }
 
+    .page-summary p {
+      padding: 5px;
+    }
+
     .page-title-cont {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
       text-align: center;
-      // @include box-shadow-standard;
     }
 
-    .page-title-cont h3 {
+    .page-title-cont h1,h2,h3,h4,h5,h6 {
       color: $primary-color;
     }
+
+    .card-cont {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card {
+      margin-bottom: 10px;
+      @include push--auto;
+      width: 90%;
+      border-radius: 3px;
+      @include box-shadow-standard;
+    }
+
+    .card:hover {
+      @include box-shadow-highlight;
+    }
+
+    .card-upper-section {
+      border-radius: 3px 3px 0 0;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      border: solid 1px $primary-color;
+      background-color: $primary-color;
+      min-height: 23vh;
+    }
+
+    .card-icon {
+      position: absolute;
+      z-index: 0;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      top: 10px;
+    }
+
+    .card-headline {
+      position: absolute;
+      color: $white;
+      padding: 10px;
+      text-align: center;
+      z-index: 3;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      top: 15vh;
+      text-shadow:0 0 0 black, 0 0 1px black;
+    }
+
+    .card-lower-section {
+      border-radius: 0 0 3px 3px;
+      margin: 0;
+      padding: 0;
+      border: solid 1px $primary-color;
+      min-height: 23vh;
+    }
+
+
+    .card p,h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+      padding: 10px 10px 5px 10px;
+    }
+
+    .card h5 {
+      font-size: 1rem;
+    }
+
+    .card p {
+      font-size: .8rem;
+    }
+
+
+
+
 
 }
 
@@ -49,14 +141,46 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
+  .card-cont {
+    flex-direction: row;
+  }
+
+  .card {
+  }
+
+  .card-upper-section {
+    min-height: 15vh;
+  }
+
+  .card-icon {
+  }
+
+  .card-headline {
+    top: 8vh;
+    font-size: 2.5rem;
+  }
+
+  .card-lower-section {
+    min-height: 15vh;
+  }
+
+  .card h5 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: .8rem;
+  }
+
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-  width: 70%;
-  margin: 2.5% 5%;
-  padding: 1% 2.5%;
-
+  // width: 70%;
+  // margin: 2.5% 5%;
+  // padding: 1% 2.5%;
+  //
 }
 
 /* Large Devices, Wide Screens */

@@ -8,6 +8,7 @@ import {
 
 
 
+
 //import app components
 import Home from './components/Home';
 import Header from './components/Header';
@@ -22,6 +23,7 @@ import WebDev from './components/WebDev';
 
 
 //import styles
+import 'normalize.css';
 import './App.css';
 
 class App extends Component {
