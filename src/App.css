@@ -67,6 +67,10 @@ p {
     font-size: 1.5rem; } }
 
 /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  p {
+    font-size: 1.1rem; } }
+
 /*
 
 main colors
@@ -171,6 +175,8 @@ more colors
     width: 98%;
     padding: 5px;
     margin: 0; }
+    .svg-flex-cont svg, .svg-flex-cont-2 svg, .svg-flex-cont-3 svg, .svg-flex-cont-4 svg, .svg-flex-cont-5 svg, .svg-flex-cont-6 svg {
+      cursor: pointer; }
   .svg-flex-cont .svg-icon {
     max-width: 3.5em;
     max-height: 3.5em; }
