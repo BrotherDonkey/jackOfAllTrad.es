@@ -8,6 +8,12 @@ $primary-color: rgba(18, 78, 120, 1);
 $secondary-color: rgba(1, 22, 56, 1);
 $tertiary-color: rgba(110, 14, 10, 1);
 
+//80% opaque
+
+$primary-color-80: rgba(18, 78, 120, 0.8);
+$secondary-color-80: rgba(1, 22, 56, 0.8);
+$tertiary-color-80: rgba(110, 14, 10, 0.8);
+
 
 $text-headline: rgba(30, 26, 27, 1);
 $text-para-dark: rgba(46, 40, 42, 1);
@@ -16,7 +22,7 @@ $text-para-light: rgba(0, 0, 50, 1);
 
 /*
 
-navigation colors
+more colors
 
 */
 
@@ -27,3 +33,13 @@ $orange: rgba(215, 78, 9, 1);
 $red: rgba(110, 14, 10, 1);
 $black: rgba(0,0,0,1);
 $white: rgba(255, 251, 252, 1);
+
+// same but 80% opaque
+
+$green-80: rgba(18, 78, 120, .8);
+$blue-80: rgba(1, 22, 56, .8);
+$yellow-80: rgba(242, .887, 5, .8);
+$orange-80: rgba(215, 78, 9, .8);
+$red-80: rgba(110, .84, .80, .8);
+$black-80: rgba(0,0,0,.8);
+$white-80: rgba(255, 251, 252, .8);

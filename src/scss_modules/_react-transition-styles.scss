@@ -11,6 +11,8 @@
 */
 
 
+//Main site headline transitions upon initial page load.
+
 .headline-animation-appear {
   opacity: 0;
   transform: translateY(100%);
@@ -25,12 +27,24 @@
 
 ///////////// as yet unused styles for headline animation //////////////////
 
-.headline-animation-enter {}
+//title for page transitions in upon mount
 
-.headline-animation-enter.headline-animation-enter-active {}
+.page-title-animation-appear {
+  opacity: 0;
+}
 
-.headline-animation-leave {}
+.page-title-animation-appear.page-title-animation-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
 
-.headline-animation-leave.headline-animation-leave-active {}
-
-//==========================================================================
+// .page-title-animation-leave {
+//   opacity: 1;
+//   transition: opacity 3s ease-in;
+// }
+//
+// .page-title-animation-leave.page-title-animation-leave-active {
+//   opacity: 0;
+//   transition: opacity 3s ease-in;
+//
+// }
