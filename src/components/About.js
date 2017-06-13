@@ -4,13 +4,29 @@ import { Link } from 'react-router-dom';
 
 //component imports
 import PageTitle from './PageTitle';
-import SubNav from './SubNav';
 import Card from './Card';
 import SvgFlexContainer from './SvgFlexContainer';
+
+//svg components
 import Bear2svg from './svg-components/Bear2svg';
-import Arrowsvg from './svg-components/Arrowsvg';
 import BrowserSVG from './svg-components/BrowserSVG';
 import BookshelfSVG from './svg-components/BookshelfSVG';
+import Amazon from './svg-components/social-icons/Amazon';
+import Medium from './svg-components/social-icons/Medium';
+import Twitter from './svg-components/social-icons/Twitter';
+import GithubSVG from './svg-components/GithubSVG';
+import JavascriptSVG from './svg-components/JavascriptSVG';
+import Csssvg from './svg-components/Csssvg';
+import Htmlsvg from './svg-components/Htmlsvg';
+import Html1SVG from './svg-components/Html1SVG';
+import Startupsvg from './svg-components/Startupsvg';
+
+
+
+
+
+
+
 
 
 
@@ -35,24 +51,41 @@ const About = () => {
             transitionLeaveTimeout={500}
             transitionAppear={true}
             transitionAppearTimeout={500}>
-            <p>Summary: Elen sila lumenn omentilmo, Nae saian luume'. Cormamin lindua ele lle. Saesa omentien lle, vanya sulie Namaarie. Aa' lasser en lle coia orn n' omenta gurtha. Aa' i'sul nora lanne'lle. Aa' menle nauva calen ar' ta hwesta e' ale'quenle. Cormamin niuve tenna' ta elea lle au'. Lissenen ar' maska'lalaith tenna' lye omentuva.</p>
+            <p>W.B. Bjorn is a web developer, former-teacher, shortstoryist, traveller, novelist, and scifi and fantasy aficionado. Raised in Idaho, currently residing in Seattle, he has lived in Wuxi, Shanghai, Taipei, Nagoya and Oxford.</p>
         </CSSTransitionGroup>
 
         <div className="card-cont">
 
-          <Link className="card-link" to="/webdev">
+          <div className="card-link" to="/webdev">
             <Card title="Web Dev"
+                  link="/webdev"
                   icon={<BrowserSVG height="100" width="100" className="card-icon"/>}
-                  subheadline="sub headline"
-                  text="Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc., li tot Europa usa li sam vocabularium." />
-          </Link>
+                  subheadline="JavaScript, React, Node, & Angular Developer"
+                  text="The following is a quick list of my dev-related skills: familiar with the following technologies: JavaScript (much of ES6), React, NodeJS, jQuery, Sass, Git, Jekyll, AngularJS (1), ExpressJS server framework, HTML5, CSS3, UI/UX Principals, and a willingness to study constantly.">
+                    <SvgFlexContainer>
+                      <GithubSVG className="svg-icon"/>
+                      <JavascriptSVG className="svg-icon"/>
+                      <Csssvg className="svg-icon"/>
+                      <Html1SVG className="svg-icon"/>
+                    </SvgFlexContainer>
+                  </Card>
+          </div>
 
-          <Link className="card-link" to="/writing">
+          <div className="card-link" to="/writing">
             <Card title="Writing"
+                  link="/writing"
                   icon={<BookshelfSVG height="100" width="100" className="card-icon"/>}
                   subheadline="Novels, short stories, travel writing and more."
-                  text="Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc., li tot Europa usa li sam vocabularium." />
-          </Link>
+                  text="My two novels A New London Rising and The Fall of Shanghai are available on Amazon and Smashwords affiliates. Click here to read short stories and samples of my novels. Click the Amazon link to support me in my passion; available on Paperback, Kindle, and the iBooks stores.">
+                    <SvgFlexContainer>
+                      <Amazon className="svg-icon"/>
+                      <Startupsvg className="svg-icon"/>
+                      <Medium className="svg-icon"/>
+                      <Twitter className="svg-icon"/>
+                    </SvgFlexContainer>
+                  </Card>
+          </div>
+
         </div>
       </div>
     );

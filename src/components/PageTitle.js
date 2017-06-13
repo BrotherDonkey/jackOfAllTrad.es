@@ -23,8 +23,7 @@ export default class PageTitle extends React.Component {
       transitionAppearTimeout={500}
       >
         {this.props.icon}
-        <h2> {this.props.title} </h2>
-
+        <h2>{this.props.title}</h2>
     </CSSTransitionGroup>
   )
   }

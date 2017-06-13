@@ -1,16 +1,10 @@
 import React from 'react';
-import { CSSTransitionGroup } from 'react-transition-group'
-
-//components
-import SvgFlexContainer from './SvgFlexContainer';
-import BookshelfSVG from './svg-components/BookshelfSVG';
-
-
-
+import { Link } from 'react-router-dom';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 export default class Card extends React.Component {
   constructor(props){
-    super();
+    super(props);
     this.state = {
     }
   }
@@ -33,23 +27,20 @@ export default class Card extends React.Component {
       transitionAppear={true}
       transitionAppearTimeout={500}
       >
-        <div className="card about">
+        <div className="card-inner-link" className="card about">
+          <Link to={this.props.link} >
           <div className="card-upper-section">
             {this.props.icon}
             <h3 className="card-headline">{this.props.title}</h3>
           </div>
+          </Link>
+          {this.props.children}
+          <Link className="card-inner-link" to={this.props.link} >
           <div className="card-lower-section">
-            <SvgFlexContainer>
-              <BookshelfSVG height="100" width="100" className="svg-icon"/>
-              <BookshelfSVG height="100" width="100" className="svg-icon"/>
-              <BookshelfSVG height="100" width="100" className="svg-icon"/>
-              <BookshelfSVG height="100" width="100" className="svg-icon"/>
-              <BookshelfSVG height="100" width="100" className="svg-icon"/>
-            </SvgFlexContainer>
             <h5>{this.props.subheadline}</h5>
             <p>{this.props.text}</p>
           </div>
-
+          </Link>
         </div>
     </CSSTransitionGroup>
 

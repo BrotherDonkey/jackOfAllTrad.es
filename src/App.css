@@ -54,11 +54,11 @@ p {
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   h1 {
-    font-size: 6rem; }
-  h2 {
     font-size: 5rem; }
+  h2 {
+    font-size: 3.5rem; }
   h3 {
-    font-size: 4rem; }
+    font-size: 3rem; }
   h4 {
     font-size: 3rem; }
   h5 {
@@ -83,7 +83,7 @@ more colors
     margin: 5px;
     padding: 5px; }
   .outer-cont {
-    background-image: linear-gradient(to top, rgba(242, 1, 5, 0.8), rgba(1, 22, 56, 0.8)), url("/images/anime-sky.jpg");
+    background-image: linear-gradient(to top, rgba(110, 14, 10, 0.8), rgba(18, 78, 120, 0.8)), url("/images/anime-sky.jpg");
     min-height: 100vh;
     background-size: cover; }
   .content-cont, footer {
@@ -114,7 +114,7 @@ more colors
   .card-cont {
     display: flex;
     flex-direction: column; }
-  .card-link {
+  .card-link, .card-inner-link {
     text-decoration: none;
     color: inherit; }
   .card {
@@ -162,18 +162,33 @@ more colors
     border-radius: 0 0 3px 3px;
     margin: 0;
     padding: 0;
-    border: solid 1px #124e78;
+    padding-bottom: 10px;
     min-height: 23vh; }
-  .svg-flex-cont {
+  .svg-flex-cont, .svg-flex-cont-2, .svg-flex-cont-3, .svg-flex-cont-4, .svg-flex-cont-5, .svg-flex-cont-6 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 98%;
-    padding: 1%;
+    padding: 5px;
     margin: 0; }
-  .svg-icon {
-    max-width: 30px;
-    max-height: 30px; }
+  .svg-flex-cont .svg-icon {
+    max-width: 3.5em;
+    max-height: 3.5em; }
+  .svg-flex-cont-2 .svg-icon {
+    max-width: 3.25em;
+    max-height: 3.25em; }
+  .svg-flex-cont-3 .svg-icon {
+    max-width: 3em;
+    max-height: 3em; }
+  .svg-flex-cont-4 .svg-icon {
+    max-width: 3em;
+    max-height: 3em; }
+  .svg-flex-cont-5 .svg-icon {
+    max-width: 2.5em;
+    max-height: 2.5em; }
+  .svg-flex-cont-6 .svg-icon {
+    max-width: 2.25em;
+    max-height: 2.25em; }
   .card p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 10px 10px 5px 10px; }
@@ -200,7 +215,43 @@ more colors
     font-size: .8rem; } }
 
 /* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .main-content {
+    margin: 25px;
+    padding: 25px; }
+  .card-cont {
+    flex-direction: row; }
+  .card-upper-section {
+    min-height: 20vh; }
+  .card-headline {
+    top: 11vh;
+    font-size: 2.5rem; }
+  .card-lower-section {
+    min-height: 20vh; }
+  .card h5 {
+    font-size: 1.2rem; }
+  .card p {
+    font-size: .8rem; }
+  .page-summary {
+    width: 95%;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto; }
+  .svg-flex-cont, .svg-flex-cont-2, .svg-flex-cont-3, .svg-flex-cont-4, .svg-flex-cont-5, .svg-flex-cont-6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 98%;
+    padding: 5px;
+    margin-top: 15px; } }
+
 /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .card p {
+    font-size: 1rem; }
+  .card h5 {
+    font-size: 1.5rem; } }
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   .outer-nav {
