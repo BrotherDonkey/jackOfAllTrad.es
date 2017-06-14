@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import { Route, Redirect } from 'react-router-dom';
 import { CSSTransitionGroup } from 'react-transition-group'
 
 //component imports
 import PageTitle from './PageTitle';
 import Card from './Card';
 import SubNav from './SubNav';
+import JavaScript from './webdev-components/JavaScript';
+import WebDesign from './webdev-components/WebDesign'
+import Portfolio from './webdev-components/Portfolio'
+
 
 //svg components
 import Bear2svg from './svg-components/Bear2svg';
@@ -13,15 +18,14 @@ import BookshelfSVG from './svg-components/BookshelfSVG';
 
 
 
-export default class WebDev extends Component {
-  render() {
+const WebDev = ({match}) => {
     return (
 
       <div className="main-content">
         <PageTitle
-          icon={<Bear2svg className="page-icon" height="100" width="100" />}
+          icon={<BrowserSVG className="page-icon" height="100" width="100" />}
           title="Web Dev" />
-          <SubNav />
+          <SubNav match={match} />
 
         <CSSTransitionGroup
             component="div"
@@ -33,12 +37,17 @@ export default class WebDev extends Component {
             transitionLeaveTimeout={500}
             transitionAppear={true}
             transitionAppearTimeout={500}>
+
+          <Route exact path={`${match.path}`} render={() => <Redirect to={`${match.path}/javascript`} />} />
+          <Route path={`${match.path}/javascript`} component={JavaScript}/>
+          <Route path={`${match.path}/webdesign`} component={WebDesign} />
+          <Route path={`${match.path}/portfolio`} component={Portfolio} />
+
         </CSSTransitionGroup>
-
-
 
 
       </div>
     );
-  }
 }
+
+export default WebDev;

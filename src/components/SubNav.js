@@ -1,11 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 import { CSSTransitionGroup } from 'react-transition-group'
 
 //take propsArray (create One for Testing purposes) then map it to become something like <li class="sub-nav-item"><NavLink className="logo-cont" exact to="/"></NavLink></li>
 //then return the string below
 
-const SubNav = (props) => (
+const SubNav = ({match}, props) => (
   <CSSTransitionGroup
       component="ul"
       className="sub-nav-cont"
@@ -16,10 +16,11 @@ const SubNav = (props) => (
       transitionLeaveTimeout={500}
       transitionAppear={true}
       transitionAppearTimeout={500}>
-        <li><NavLink to="/about" class="sub-nav-item">JavaScript</NavLink></li>
-        <li><NavLink to="/about" class="sub-nav-item">Web Design</NavLink></li>
-        <li><NavLink to="/about" class="sub-nav-item">Portfolio</NavLink></li>
+        <li><NavLink to={`${match.url}/javascript`} class="sub-nav-item">JavaScript</NavLink></li>
+        <li><NavLink to={`${match.url}/webdesign`} class="sub-nav-item">Web Design</NavLink></li>
+        <li><NavLink to={`${match.url}/portfolio`} class="sub-nav-item">Portfolio</NavLink></li>
   </CSSTransitionGroup>
+
 );
 
 export default SubNav;
