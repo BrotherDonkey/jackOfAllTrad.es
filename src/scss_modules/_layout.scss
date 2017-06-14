@@ -121,6 +121,10 @@
       width: 98%;
       padding: 5px;
       margin: 0;
+
+      svg {
+        cursor: pointer;
+      }
     }
 
     .svg-flex-cont {
@@ -294,5 +298,19 @@
   .card h5 {
     font-size: 1.5rem;
   }
+
+  .card-upper-section {
+    min-height: 18vh;
+  }
+
+  .card-headline {
+    top: 11vh;
+    font-size: 2.5rem;
+  }
+
+  .card-lower-section {
+    min-height: 18vh;
+  }
+
 
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Startupsvg(props) {
+export default function StoriesSVG(props) {
   return (
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.995 511.995" style={{enableBackground: 'new 0 0 511.995 511.995'}} xmlSpace="preserve" width="511.995" height="511.995" {...props}>
       <circle style={{fill: '#3A99D7'}} cx="255.997" cy="255.997" r="255.997" />

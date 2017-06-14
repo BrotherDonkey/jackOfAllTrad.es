@@ -27,7 +27,7 @@ export default class Card extends React.Component {
       transitionAppear={true}
       transitionAppearTimeout={500}
       >
-        <div className="card-inner-link" className="card about">
+        <div className="card-inner-link card about">
           <Link to={this.props.link} >
           <div className="card-upper-section">
             {this.props.icon}

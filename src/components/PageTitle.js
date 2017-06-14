@@ -5,9 +5,6 @@ import { CSSTransitionGroup } from 'react-transition-group';
 
 
 export default class PageTitle extends React.Component {
-  constructor(props){
-    super(props);
-  }
   render(){
 
   return (
