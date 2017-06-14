@@ -1,18 +1,41 @@
 import React, { Component } from 'react';
+import { CSSTransitionGroup } from 'react-transition-group'
 
+//component imports
+import PageTitle from './PageTitle';
+import Card from './Card';
+import SubNav from './SubNav';
 
-
-const webDevDescription = `A few years ago, as part of a internet publishing site called Fictuary, I began learning web development. Since then I\'ve used JavaScript as my window into this brave new world. Since then I\'ve completed a range of projects (see below) and solidified my knowledge of JavaScript and its many tools.\r\n\r\nThe following is a quick list of my dev-related skills: familiar with the following technologies: JavaScript (much of ES6), NodeJS, React, jQuery, Sass, Git, Jekyll, AngularJS (1), ExpressJS server framework, HTML5, CSS3, UI\/UX Principals, and a willingness to study constantly.\r\n\r\nI\'ve built this site using React.\r\n\r\nI currently work as a Web Designer at CDK Global. Although I'm something of a jack-of-all-trades, I'm not too shabby on the design end. I can use Photoshop, write, edit, and organize a mean stylesheet.`;
+//svg components
+import Bear2svg from './svg-components/Bear2svg';
+import BrowserSVG from './svg-components/BrowserSVG';
+import BookshelfSVG from './svg-components/BookshelfSVG';
 
 
 
 export default class WebDev extends Component {
   render() {
     return (
-      <div className="web-dev">
-        <h2 className="section-title">Web Development and Design</h2>
-        <p className="section-desc">{webDevDescription}</p>
+
+      <div className="main-content">
+        <PageTitle
+          icon={<Bear2svg className="page-icon" height="100" width="100" />}
+          title="Web Dev" />
+
+        <CSSTransitionGroup
+            component="div"
+            className="page-summary"
+            transitionName="page-title-animation"
+            transitionEnter={true}
+            transitionEnterTimeout={500}
+            transitionLeave={true}
+            transitionLeaveTimeout={500}
+            transitionAppear={true}
+            transitionAppearTimeout={500}>
+        </CSSTransitionGroup>
+
+
       </div>
-    )
+    );
   }
 }
