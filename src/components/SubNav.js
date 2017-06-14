@@ -16,9 +16,9 @@ const SubNav = ({match}, props) => (
       transitionLeaveTimeout={500}
       transitionAppear={true}
       transitionAppearTimeout={500}>
-        <li><NavLink to={`${match.url}/javascript`} class="sub-nav-item">JavaScript</NavLink></li>
-        <li><NavLink to={`${match.url}/webdesign`} class="sub-nav-item">Web Design</NavLink></li>
-        <li><NavLink to={`${match.url}/portfolio`} class="sub-nav-item">Portfolio</NavLink></li>
+        <li><NavLink to={`${match.url}/javascript`} className="sub-nav-item">JavaScript</NavLink></li>
+        <li><NavLink to={`${match.url}/webdesign`} className="sub-nav-item">Web Design</NavLink></li>
+        <li><NavLink to={`${match.url}/portfolio`} className="sub-nav-item">Portfolio</NavLink></li>
   </CSSTransitionGroup>
 
 );
