@@ -84,6 +84,7 @@ more colors
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   .main-content {
+    position: relative;
     margin: 5px;
     padding: 5px; }
   .outer-cont {
@@ -273,7 +274,6 @@ more colors
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    perspective: 700px;
     margin-left: auto;
     margin-right: auto; }
   .nav-cont {
@@ -306,7 +306,26 @@ more colors
     box-shadow: 0px 0px 10px 3px #fafafa; }
   .nav-cont a.active {
     background-color: #fffbfc;
-    color: black; } }
+    color: black; }
+  .sub-nav-cont {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0; }
+  .sub-nav-cont a {
+    font-size: .8rem;
+    background: #124e78;
+    border: 1px solid #124e78;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 2px;
+    color: #fffbfc; }
+  .sub-nav-cont a.active {
+    color: #124e78;
+    background: #fffbfc; } }
 
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
@@ -339,10 +358,36 @@ more colors
     margin: 15px 0 0 0;
     padding: 5px 15px;
     border-radius: 2px;
-    transition: .5s ease-in; } }
+    transition: .5s ease-in; }
+  .sub-nav-cont {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 12vh; }
+  .sub-nav-cont a {
+    font-size: 1rem;
+    background: #124e78;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 2px;
+    transition: all .5s ease-in;
+    color: #fffbfc; }
+  .sub-nav-cont a.active {
+    color: #d74e09; } }
 
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .sub-nav-cont {
+    min-height: 10vh; } }
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   .footer {
@@ -379,6 +424,35 @@ more colors
 .page-title-animation-appear.page-title-animation-appear-active {
   opacity: 1;
   transition: opacity .5s ease-in; }
+
+/*
+============================================================================
+***** For SubNav Component *****
+============================================================================
+*/
+.sub-nav-animation-appear {
+  opacity: 0;
+  transform: translateY(100%); }
+
+.sub-nav-animation-appear.sub-nav-animation-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in .5s, transform 1s ease-in; }
+
+.sub-nav-animation-appear {
+  opacity: 0; }
+
+.sub-nav-animation-appear.sub-nav-animation-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in; }
+
+.sub-nav-animation-leave {
+  opacity: 1;
+  transition: opacity 3s ease-in; }
+
+.sub-nav-animation-leave.sub-nav-animation-leave-active {
+  opacity: 0;
+  transition: opacity 3s ease-in; }
 
 /*
 

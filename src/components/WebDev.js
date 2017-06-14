@@ -21,6 +21,7 @@ export default class WebDev extends Component {
         <PageTitle
           icon={<Bear2svg className="page-icon" height="100" width="100" />}
           title="Web Dev" />
+          <SubNav />
 
         <CSSTransitionGroup
             component="div"
@@ -33,6 +34,8 @@ export default class WebDev extends Component {
             transitionAppear={true}
             transitionAppearTimeout={500}>
         </CSSTransitionGroup>
+
+
 
 
       </div>
