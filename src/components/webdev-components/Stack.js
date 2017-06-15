@@ -13,7 +13,15 @@ const Stack = (props) => {
       <p className="stack-desc">{props.data.desc}</p>
     </div>
     <div className="stack-icon-cont">
-      <h5> icon</h5>
+      <div className="icons">
+        <p className="fake-icon" >{props.data.title}</p>
+        <p className="fake-icon" >{props.data.title}</p>
+        <p className="fake-icon" >{props.data.title}</p>
+        <p className="fake-icon" >{props.data.title}</p>
+      </div>
+      <div className="descriptions">
+        <p>here's a description of one of the skills</p>
+      </div>
     </div>
   </div>
 )

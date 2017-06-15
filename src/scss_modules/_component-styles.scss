@@ -1,5 +1,15 @@
 @media only screen and (min-width : 320px) {
 
+  .fake-icon {
+    background: red;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: white;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+
   .page-summary-transition {
     margin: 5px;
     width: calc(100%-10px);
@@ -70,6 +80,10 @@
     width: 250px;
     height: 250px;
 }
+
+  .stack-icon-cont {
+    width: calc(100% - 275px);
+  }
 
 
 
