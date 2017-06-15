@@ -198,13 +198,18 @@ more colors
     max-height: 2.25em; }
   .card p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    padding: 10px 10px 5px 10px; }
+    padding: 5px; }
   .card h5 {
     font-size: 1rem; }
   .card p {
     font-size: .8rem; } }
 
 /* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .card p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 10px 10px 5px 10px; } }
+
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .card-cont {
@@ -312,7 +317,7 @@ more colors
     width: 100%;
     list-style: none;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 0; }
   .sub-nav-cont a {
@@ -320,7 +325,8 @@ more colors
     background: #124e78;
     border: 1px solid #124e78;
     text-decoration: none;
-    padding: 4px 8px;
+    padding: 5px 10px;
+    margin: 5px;
     border-radius: 2px;
     color: #fffbfc; }
   .sub-nav-cont a.active {
@@ -367,8 +373,7 @@ more colors
     list-style: none;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
-    min-height: 12vh; }
+    align-items: flex-end; }
   .sub-nav-cont a {
     font-size: 1rem;
     background: #124e78;
@@ -456,21 +461,48 @@ more colors
   opacity: 0;
   transition: opacity 3s ease-in; }
 
-/*
+@media only screen and (min-width: 320px) {
+  .page-summary-transition {
+    margin: 5px;
+    width: calc(100%-10px); }
+  .stack-cont {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .stack-header-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #f2bb05;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; }
+  .stack-title {
+    text-align: center;
+    margin: 0 10px; }
+  p.stack-desc {
+    margin: 10px;
+    text-align: center; } }
 
-STYLES FOR 3D BOX COMPONENT FOUND IN HEADER
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .stack-cont {
+    margin: 25px 0 0 0;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .stack-header-background {
+    width: 250px;
+    height: 250px; } }
 
-for use later when  it may come to adding some transition / animations to these
-*/
-.box-link-cont {
-  perspective: 600px; }
-
-.box-side .front {
-  background-color: blue;
-  transform: translateX(300deg);
-  z-index: 100; }
-
-.square {
-  height: 100px;
-  width: 100px;
-  background: red; }
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */

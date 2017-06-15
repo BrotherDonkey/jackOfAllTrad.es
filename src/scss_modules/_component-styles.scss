@@ -1,49 +1,86 @@
-/*
+@media only screen and (min-width : 320px) {
 
-STYLES FOR 3D BOX COMPONENT FOUND IN HEADER
+  .page-summary-transition {
+    margin: 5px;
+    width: calc(100%-10px);
+  }
 
-for use later when  it may come to adding some transition / animations to these
-*/
+  .stack-cont {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.box-link-cont {
-  perspective: 600px;
+  }
+
+  .stack-header-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: $yellow;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .stack-title {
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  p.stack-desc {
+    margin: 10px;
+    text-align: center;
+
+  }
+
 }
 
-.box-side {
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+  //--------------------------------------------------------------------------------
+  //-------------------- web dev comp styles ---------------------------------------
+  //-------------------------- small screens ---------------------------------------
+
 
 }
 
-.front,.back,.top,.bottom,.right,.left {
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+  .stack-cont {
+    margin: 25px 0 0 0;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .stack-header-background {
+    width: 250px;
+    height: 250px;
+}
+
+
 
 }
 
-.box-side {
-
-  .front {
-    background-color: blue;
-    transform: translateX(300deg);
-    z-index: 100;
-  }
-
-  .back {
-  }
-
-  .right {
-  }
-
-  .left {
-  }
-
-  .top {
-  }
-
-  .bottom {
-  }
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
 
 }
 
-.square {
-  height: 100px;
-  width: 100px;
-  background: red;
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }

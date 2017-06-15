@@ -10,23 +10,28 @@ import Portfolio from './webdev-components/Portfolio'
 
 
 //svg components
-import Bear2svg from './svg-components/Bear2svg';
 import BrowserSVG from './svg-components/BrowserSVG';
+
+//get data --> change to Axios or Fetch later
+import stackData from '../data/stackData';
 
 
 
 const WebDev = ({match}) => {
-    return (
 
+    const data = stackData;
+    console.log(data);
+
+    return (
       <div className="main-content">
         <PageTitle
-          icon={<BrowserSVG className="page-icon" height="100" width="100" />}
-          title="Web Dev" />
+          icon={<BrowserSVG className="page-icon" height="75" width="75" />}
+          title={data.subpageTitle} />
           <SubNav match={match} />
 
         <CSSTransitionGroup
             component="div"
-            className="page-summary"
+            className="page-summary-transition"
             transitionName="page-title-animation"
             transitionEnter={true}
             transitionEnterTimeout={500}
@@ -36,7 +41,7 @@ const WebDev = ({match}) => {
             transitionAppearTimeout={500}>
 
           <Route exact path={`${match.path}`} render={() => <Redirect to={`${match.path}/stack`} />} />
-          <Route path={`${match.path}/stack`} component={Stack} name="Stack"/>
+          <Route path={`${match.path}/stack`} render={() => <Stack data={data.frontEnd} /> } />
           <Route path={`${match.path}/portfolio`} component={Portfolio} name="Portfolio" />
 
         </CSSTransitionGroup>
