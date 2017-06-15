@@ -7,8 +7,6 @@ import Card from './Card';
 
 //svg components
 import Bear2svg from './svg-components/Bear2svg';
-import BrowserSVG from './svg-components/BrowserSVG';
-import BookshelfSVG from './svg-components/BookshelfSVG';
 
 //import data
 import aboutData from '../data/aboutData';
@@ -21,7 +19,7 @@ class About extends React.Component {
     super();
     this.state = aboutData;
   }
-  
+
   render(){
     return (
 

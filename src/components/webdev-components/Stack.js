@@ -4,7 +4,7 @@ import React from 'react';
 
 
 
-const JavaScript = (props) => {
+const Stack = (props) => {
   return (
   <div>
     <h3>JavaScript</h3>
@@ -12,4 +12,4 @@ const JavaScript = (props) => {
 )
 }
 
-export default JavaScript;
+export default Stack;

@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import { CSSTransitionGroup } from 'react-transition-group'
 
 //component imports
 import PageTitle from './PageTitle';
-import Card from './Card';
 import SubNav from './SubNav';
-import JavaScript from './webdev-components/JavaScript';
-import WebDesign from './webdev-components/WebDesign'
+import Stack from './webdev-components/Stack';
 import Portfolio from './webdev-components/Portfolio'
 
 
 //svg components
 import Bear2svg from './svg-components/Bear2svg';
 import BrowserSVG from './svg-components/BrowserSVG';
-import BookshelfSVG from './svg-components/BookshelfSVG';
 
 
 
@@ -38,10 +35,9 @@ const WebDev = ({match}) => {
             transitionAppear={true}
             transitionAppearTimeout={500}>
 
-          <Route exact path={`${match.path}`} render={() => <Redirect to={`${match.path}/javascript`} />} />
-          <Route path={`${match.path}/javascript`} component={JavaScript}/>
-          <Route path={`${match.path}/webdesign`} component={WebDesign} />
-          <Route path={`${match.path}/portfolio`} component={Portfolio} />
+          <Route exact path={`${match.path}`} render={() => <Redirect to={`${match.path}/stack`} />} />
+          <Route path={`${match.path}/stack`} component={Stack} name="Stack"/>
+          <Route path={`${match.path}/portfolio`} component={Portfolio} name="Portfolio" />
 
         </CSSTransitionGroup>
 

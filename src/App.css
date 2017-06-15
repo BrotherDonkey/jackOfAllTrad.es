@@ -380,7 +380,9 @@ more colors
     transition: all .5s ease-in;
     color: #fffbfc; }
   .sub-nav-cont a.active {
-    color: #d74e09; } }
+    color: #d74e09; }
+  .sub-nav-item {
+    margin: 10px; } }
 
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
