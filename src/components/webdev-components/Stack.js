@@ -4,8 +4,21 @@ import React from 'react';
 
 
 
-const Stack = (props) => {
-  console.log(props.data);
+const Stack = (props, {match}) => {
+  console.log(props.data.icons);
+
+  const iconsFrontEnd = props.data.icons.map((icon, index) =>{
+    return (
+      <div className="stack-icon-sub-cont" key={`${index}${icon.name}`} >
+        <p className="stack-icon-name">{icon.name}</p>
+        <img src={`${icon.imgPath}`} alt={`${icon.name}`} className="stack-icon" />
+        <p className="stack-icon-desc">{icon.desc}</p>
+      </div>
+    );
+  });
+
+
+
   return (
   <div className="stack-cont">
     <div className="stack-header-background">
@@ -13,15 +26,7 @@ const Stack = (props) => {
       <p className="stack-desc">{props.data.desc}</p>
     </div>
     <div className="stack-icon-cont">
-      <div className="icons">
-        <p className="fake-icon" >{props.data.title}</p>
-        <p className="fake-icon" >{props.data.title}</p>
-        <p className="fake-icon" >{props.data.title}</p>
-        <p className="fake-icon" >{props.data.title}</p>
-      </div>
-      <div className="descriptions">
-        <p>here's a description of one of the skills</p>
-      </div>
+        {iconsFrontEnd}
     </div>
   </div>
 )

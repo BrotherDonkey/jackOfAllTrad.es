@@ -1,14 +1,8 @@
 @media only screen and (min-width : 320px) {
 
-  .fake-icon {
-    background: red;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    color: white;
-    text-align: center;
-    text-overflow: ellipsis;
-  }
+  //--------------------------------------------------------------------------------
+  //-------------------- web dev comp styles ---------------------------------------
+  //-------------------------- small screens ---------------------------------------
 
   .page-summary-transition {
     margin: 5px;
@@ -30,7 +24,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 15px 0;
     background: $yellow;
     border-radius: 50%;
     width: 200px;
@@ -43,9 +37,47 @@
   }
 
   p.stack-desc {
-    margin: 10px;
+    margin: 0 10px;
     text-align: center;
+  }
 
+  .stack-icon-cont {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    height: 100%;
+  }
+
+  .stack-icon-sub-cont {
+    max-width: 50%;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    @include push--auto;
+    cursor: pointer;
+  }
+
+  .stack-icon-name {
+    text-align: center;
+    color: $primary-color;
+  }
+
+  .stack-icon {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+  }
+
+  .stack-icon-desc {
+    display: none;
+    position: absolute;
+    font-size: .5rem;
+    color: $black;
+    top: -50px;
   }
 
 }
@@ -86,11 +118,65 @@
   }
 
 
+  .stack-icon-cont {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .stack-icon-sub-cont {
+    max-width: 25%;
+    // height: ;
+    // width: 100%;
+  }
+
+  .stack-icon-name {
+  }
+
+  .stack-icon {
+  }
+
+  .stack-icon-desc {
+    // display: none; // still on display none
+  }
+
+
+
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
+
+    .stack-icon-cont {
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .stack-icon-sub-cont {
+      max-width: 15%;
+      // height: ;
+      // width: 100%;
+    }
+
+    .stack-icon-name {
+    }
+
+    .stack-icon {
+    }
+
+    .stack-icon-desc {
+      // display: none; // still on display none
+    }
+
 
 }
 
