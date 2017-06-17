@@ -16,7 +16,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Writing from './components/Writing';
 import FileNotFound from './components/FileNotFound';
-import WebDev from './components/WebDev';
+import WebDev2 from './components/WebDev2';
 
 
 
@@ -37,7 +37,7 @@ class App extends Component {
                    <Switch>
                      <Route exact path="/" component={Home} />
                      <Route path="/about" component={About} />
-                     <Route path="/webdev" component={WebDev} />
+                     <Route path="/webdev" component={WebDev2} />
                      <Route path="/writing" component={Writing} />
                      <Route component={FileNotFound} />
                    </Switch>
