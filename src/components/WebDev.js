@@ -20,7 +20,6 @@ import stackData from '../data/stackData';
 const WebDev = ({match}) => {
 
     const data = stackData;
-    console.log(data);
 
     return (
       <div className="main-content">
@@ -41,7 +40,7 @@ const WebDev = ({match}) => {
             transitionAppearTimeout={500}>
 
           <Route exact path={`${match.path}`} render={() => <Redirect to={`${match.path}/stack`} />} />
-          <Route path={`${match.path}/stack`} render={() => <Stack data={data.frontEnd} /> } />
+          <Route path={`${match.path}/stack`} render={() => <Stack frontEnd={data.frontEnd} backEnd={data.backEnd} tools={data.tools}/> } />
           <Route path={`${match.path}/portfolio`} component={Portfolio} name="Portfolio" />
 
         </CSSTransitionGroup>

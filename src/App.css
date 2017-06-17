@@ -504,12 +504,13 @@ more colors
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 1s ease-in; }
   .stack-icon-name {
     text-align: center;
     color: #124e78; }
   .stack-icon {
-    width: 100%;
+    width: 94%;
     height: auto;
     z-index: 2; }
   .stack-icon-desc {

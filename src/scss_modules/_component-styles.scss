@@ -59,6 +59,7 @@
     justify-content: center;
     @include push--auto;
     cursor: pointer;
+    transition: 1s ease-in;
   }
 
   .stack-icon-name {
@@ -67,7 +68,7 @@
   }
 
   .stack-icon {
-    width: 100%;
+    width: 94%;
     height: auto;
     z-index: 2;
   }

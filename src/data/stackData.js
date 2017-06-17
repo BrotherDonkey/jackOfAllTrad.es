@@ -50,26 +50,32 @@ const stackData = {
   },
   backEnd : {
     title : "Back End Development",
-    desc : "Express:",
+    desc : "Node, NoSQL, and ExpressJS server setup for API or/routing.",
     link : "/portfolio",
     icons : [
       {
         name : "Node.js",
         skill: 4,
-        imgPath: "/icons/coding/node.png",
+        imgPath: "/icons/png/nodejs.png",
         desc: "ES6 to jQuery and many things in between."
       },
       {
         name : "ExpressJS",
         skill: 4,
-        imgPath: "/icons/coding/node.png",
+        imgPath: "/icons/png/express.png",
         desc: "Whether it's setting up a server or creating a RESTful APIs, I can get it done."
       },
       {
         name : "MongoDB",
         skill: 4,
-        imgPath: "/icons/coding/react.png",
+        imgPath: "/icons/png/mongodb2.png",
         desc: "noSQL database, using Mongoose to interface with Express."
+      },
+      {
+        name : "Amazon Web Services",
+        skill: 4,
+        imgPath: "/icons/png/AWS_cloud2.png",
+        desc: "Whether it's setting up a server or creating a RESTful APIs, I can get it done."
       }
     ]
   },
@@ -81,20 +87,14 @@ const stackData = {
       {
         name : "Git",
         skill: 4,
-        imgPath: "/icons/coding/node.png",
+        imgPath: "/icons/png/git2.png",
         desc: "ES6 to jQuery and many things in between."
       },
       {
-        name : "Amazon Web Services",
+        name : "Responsive Design",
         skill: 4,
-        imgPath: "/icons/coding/node.png",
-        desc: "Whether it's setting up a server or creating a RESTful APIs, I can get it done."
-      },
-      {
-        name : "MongoDB",
-        skill: 4,
-        imgPath: "/icons/coding/react.png",
-        desc: "noSQL database, using Mongoose to interface with Express."
+        imgPath: "/icons/png/responsivedesign.png",
+        desc: "Mobile first, or whatever you want."
       },
       {
         name : "Wireframing",
@@ -110,7 +110,6 @@ const stackData = {
       }
     ]
   }
-
 };
 
 
