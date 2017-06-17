@@ -48,3 +48,47 @@
 //   transition: opacity 3s ease-in;
 //
 // }
+
+/*
+============================================================================
+***** For SubNav Component *****
+============================================================================
+*/
+
+//Main site headline transitions upon initial page load.
+
+.sub-nav-animation-appear {
+  opacity: 0;
+  transform: translateY(100%);
+
+}
+
+.sub-nav-animation-appear.sub-nav-animation-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in .5s, transform 1s ease-in;
+}
+
+///////////// as yet unused styles for headline animation //////////////////
+
+//title for page transitions in upon mount
+
+.sub-nav-animation-appear {
+  opacity: 0;
+}
+
+.sub-nav-animation-appear.sub-nav-animation-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.sub-nav-animation-leave {
+  opacity: 1;
+  transition: opacity 3s ease-in;
+}
+
+.sub-nav-animation-leave.sub-nav-animation-leave-active {
+  opacity: 0;
+  transition: opacity 3s ease-in;
+
+}

@@ -1,49 +1,192 @@
-/*
+@media only screen and (min-width : 320px) {
 
-STYLES FOR 3D BOX COMPONENT FOUND IN HEADER
+  //--------------------------------------------------------------------------------
+  //-------------------- web dev comp styles ---------------------------------------
+  //-------------------------- small screens ---------------------------------------
 
-for use later when  it may come to adding some transition / animations to these
-*/
+  .page-summary-transition {
+    margin: 5px;
+    width: calc(100%-10px);
+  }
 
-.box-link-cont {
-  perspective: 600px;
+  .stack-cont {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .stack-header-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    background: $yellow;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  .page-subtitle {
+    width: 100%;
+    text-align: center;
+    @include push--auto;
+  }
+
+  .stack-title {
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  p.stack-desc {
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  .stack-icon-cont {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    height: 100%;
+  }
+
+  .stack-icon-sub-cont {
+    max-width: 50%;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    @include push--auto;
+    cursor: pointer;
+    transition: 1s ease-in;
+  }
+
+  .stack-icon-name {
+    text-align: center;
+    color: $primary-color;
+  }
+
+  .stack-icon {
+    width: 94%;
+    height: auto;
+    z-index: 2;
+  }
+
+  .stack-icon-desc {
+    display: none;
+    position: absolute;
+    font-size: .5rem;
+    color: $black;
+    top: -50px;
+  }
+
 }
 
-.box-side {
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+  //--------------------------------------------------------------------------------
+  //-------------------- web dev comp styles ---------------------------------------
+  //-------------------------- small screens ---------------------------------------
+
 
 }
 
-.front,.back,.top,.bottom,.right,.left {
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+  .stack-cont {
+    margin: 25px 0 0 0;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .stack-header-background {
+    width: 250px;
+    height: 250px;
+}
+
+  .stack-icon-cont {
+    width: calc(100% - 275px);
+  }
+
+
+  .stack-icon-cont {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .stack-icon-sub-cont {
+    max-width: 25%;
+    // height: ;
+    // width: 100%;
+  }
+
+  .stack-icon-name {
+  }
+
+  .stack-icon {
+  }
+
+  .stack-icon-desc {
+    // display: none; // still on display none
+  }
+
+
+
 
 }
 
-.box-side {
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
 
-  .front {
-    background-color: blue;
-    transform: translateX(300deg);
-    z-index: 100;
-  }
 
-  .back {
-  }
+    .stack-icon-cont {
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
 
-  .right {
-  }
+    .stack-icon-sub-cont {
+      max-width: 15%;
+      // height: ;
+      // width: 100%;
+    }
 
-  .left {
-  }
+    .stack-icon-name {
+    }
 
-  .top {
-  }
+    .stack-icon {
+    }
 
-  .bottom {
-  }
+    .stack-icon-desc {
+      // display: none; // still on display none
+    }
+
 
 }
 
-.square {
-  height: 100px;
-  width: 100px;
-  background: red;
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }
