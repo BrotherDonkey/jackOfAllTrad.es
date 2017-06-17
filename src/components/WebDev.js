@@ -25,7 +25,7 @@ const WebDev = ({match}) => {
       <div className="main-content">
         <PageTitle
           icon={<BrowserSVG className="page-icon" height="75" width="75" />}
-          title={data.subpageTitle} />
+          title="Web Dev" />
           <SubNav match={match} />
 
         <CSSTransitionGroup
@@ -40,8 +40,8 @@ const WebDev = ({match}) => {
             transitionAppearTimeout={500}>
 
           <Route exact path={`${match.path}`} render={() => <Redirect to={`${match.path}/stack`} />} />
-          <Route path={`${match.path}/stack`} render={() => <Stack frontEnd={data.frontEnd} backEnd={data.backEnd} tools={data.tools}/> } />
-          <Route path={`${match.path}/portfolio`} component={Portfolio} name="Portfolio" />
+          <Route path={`${match.path}/stack`} render={() => <Stack title={data.subpageTitle} frontEnd={data.frontEnd} backEnd={data.backEnd} tools={data.tools}/> } />
+          <Route path={`${match.path}/portfolio`} render={() => <Portfolio title="Portfolio" /> } />
 
         </CSSTransitionGroup>
 

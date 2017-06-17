@@ -8,7 +8,7 @@ const Portfolio = (props) => {
   return (
 
   <div>
-    <h4>Portfolio</h4>
+    <h5 className="page-subtitle">- {props.title} -</h5>
   </div>
 
 )

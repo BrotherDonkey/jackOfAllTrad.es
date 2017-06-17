@@ -30,6 +30,11 @@
     width: 200px;
     height: 200px;
   }
+  .page-subtitle {
+    width: 100%;
+    text-align: center;
+    @include push--auto;
+  }
 
   .stack-title {
     text-align: center;

@@ -482,6 +482,11 @@ more colors
     border-radius: 50%;
     width: 200px;
     height: 200px; }
+  .page-subtitle {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
   .stack-title {
     text-align: center;
     margin: 0 10px; }
