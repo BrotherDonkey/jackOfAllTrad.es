@@ -89,21 +89,27 @@
 
   // STYLES RELATING TO THE API-FETCHED GITHUB INFO ON THE /WEBDEV/PORTFOLIO PageTitle
 
+  .profile-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   .profile-cont {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 15px;
-    background-color: $yellow;
+    margin: 15px 0;
+    // background-color: $yellow;
     border-radius: 5px;
-    border: 1px solid $primary-color;
+    // border: 1px solid $primary-color;
     }
 
   .profile-avatar {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     margin: 5px;
     border-radius: 50%;
     border: 2px solid $primary-color;
@@ -123,14 +129,7 @@
 
   .profile-login {
       padding: 0;
-    }
-
-  .profile-public-repos {
-
-    }
-
-  .profile-followers {
-
+      font-size: 1.1em;
     }
 
   .profile-visit-btn {
@@ -138,39 +137,33 @@
     color: $white;
     border: 1px solid $primary-color;
     border-radius: 5px;
-
   }
 
+  .profile-links-cont {
+    width: 100%;
+    margin-top: 10px;
+  }
 
-    //
-    // .profile-cont {
-    //
-    //   }
-    //
-    // .profile-avatar {
-    //
-    //   }
-    //
-    // .profile-text {
-    //
-    //   }
-    //
-    // .profile-link {
-    //
-    //   }
-    //
-    // .profile-login {
-    //
-    //   }
-    //
-    // .profile-public-repos {
-    //
-    //   }
-    //
-    // .profile-followers {
-    //
-    //   }
+  .profile-links-headline {
+    text-align: center;
+    padding: 0;
+  }
 
+  .profile-links-list-item {
+    color: $black;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .profile-links-list-item p {
+    line-height: 1.5rem;
+    transition: all .5s ease-in;
+  }
+
+  .profile-links-list-item p:after {
+    transition: all .5s ease-in;
+    content: " \1F517 ";
+  }
 
 
 
@@ -200,7 +193,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
   }
 
   .stack-header-background {
@@ -237,6 +229,55 @@
     // display: none; // still on display none
   }
 
+  // styles for webdev/portfolio route github user info
+
+  .profile-top {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .profile-links-cont {
+    max-width: 45%;
+  }
+
+
+  .profile-cont {
+    max-width: 45%;
+
+    }
+
+  .profile-avatar {
+    height: 125px;
+    width: 125px;
+
+    }
+
+  .profile-text {
+
+    }
+
+  .profile-link {
+
+
+    }
+
+  .profile-login {
+
+    }
+
+  .profile-public-repos {
+
+    }
+
+  .profile-followers {
+
+    }
+
+  .profile-visit-btn {
+
+  }
+
+
 
 
 
@@ -271,6 +312,12 @@
     .stack-icon-desc {
       // display: none; // still on display none
     }
+
+    .profile-avatar {
+        height: 175px;
+        width: 175px;
+
+        }
 
 
 }

@@ -24,7 +24,7 @@ class WebDev2 extends React.Component {
       super(props);
       this.state = {
         data: stackData,
-        githubRepos: {},
+        githubRepos: [],
         githubUserInfo: {},
         match: this.props.match
       }
@@ -84,7 +84,7 @@ class WebDev2 extends React.Component {
 
           <Route exact path={`${this.props.match.path}`} render={() => <Redirect to={`${this.props.match.path}/stack`} />} />
           <Route path={`${this.props.match.path}/stack`} render={() => <Stack title={this.state.data.subpageTitle} frontEnd={this.state.data.frontEnd} backEnd={this.state.data.backEnd} tools={this.state.data.tools}/> } />
-          <Route path={`${this.props.match.path}/portfolio`} render={() => <Portfolio title="Portfolio" userInfo={this.state.githubUserInfo} repos={"repos"} /> } />
+          <Route path={`${this.props.match.path}/portfolio`} render={() => <Portfolio title="Portfolio" userInfo={this.state.githubUserInfo} repos={this.state.githubRepos} /> } />
         </CSSTransitionGroup>
       </div>
     );

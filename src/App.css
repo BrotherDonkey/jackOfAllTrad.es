@@ -524,19 +524,21 @@ more colors
     font-size: .5rem;
     color: black;
     top: -50px; }
+  .profile-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
   .profile-cont {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 15px;
-    background-color: #f2bb05;
-    border-radius: 5px;
-    border: 1px solid #124e78; }
+    margin: 15px 0;
+    border-radius: 5px; }
   .profile-avatar {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     margin: 5px;
     border-radius: 50%;
     border: 2px solid #124e78; }
@@ -546,12 +548,29 @@ more colors
     flex-direction: column;
     justify-content: center; }
   .profile-login {
-    padding: 0; }
+    padding: 0;
+    font-size: 1.1em; }
   .profile-visit-btn {
     background-color: #124e78;
     color: #fffbfc;
     border: 1px solid #124e78;
-    border-radius: 5px; } }
+    border-radius: 5px; }
+  .profile-links-cont {
+    width: 100%;
+    margin-top: 10px; }
+  .profile-links-headline {
+    text-align: center;
+    padding: 0; }
+  .profile-links-list-item {
+    color: black;
+    text-align: center;
+    text-decoration: none; }
+  .profile-links-list-item p {
+    line-height: 1.5rem;
+    transition: all .5s ease-in; }
+  .profile-links-list-item p:after {
+    transition: all .5s ease-in;
+    content: " \1F517 "; } }
 
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
@@ -576,7 +595,17 @@ more colors
     flex-direction: row;
     margin: 0; }
   .stack-icon-sub-cont {
-    max-width: 25%; } }
+    max-width: 25%; }
+  .profile-top {
+    flex-direction: row;
+    justify-content: space-around; }
+  .profile-links-cont {
+    max-width: 45%; }
+  .profile-cont {
+    max-width: 45%; }
+  .profile-avatar {
+    height: 125px;
+    width: 125px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -589,6 +618,9 @@ more colors
     justify-content: center;
     height: 100%; }
   .stack-icon-sub-cont {
-    max-width: 15%; } }
+    max-width: 15%; }
+  .profile-avatar {
+    height: 175px;
+    width: 175px; } }
 
 /* Large Devices, Wide Screens */
