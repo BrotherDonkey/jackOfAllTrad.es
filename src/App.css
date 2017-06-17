@@ -523,7 +523,35 @@ more colors
     position: absolute;
     font-size: .5rem;
     color: black;
-    top: -50px; } }
+    top: -50px; }
+  .profile-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    background-color: #f2bb05;
+    border-radius: 5px;
+    border: 1px solid #124e78; }
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid #124e78; }
+  .profile-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .profile-login {
+    padding: 0; }
+  .profile-visit-btn {
+    background-color: #124e78;
+    color: #fffbfc;
+    border: 1px solid #124e78;
+    border-radius: 5px; } }
 
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */

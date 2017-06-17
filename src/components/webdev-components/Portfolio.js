@@ -9,14 +9,14 @@ const Portfolio = (props) => {
 
   return (
   <div>
-  <h5 className="page-subtitle">- { props.title }-</h5>
+  <h5 className="page-subtitle">- { props.title } -</h5>
   <div className="profile-cont">
     <img className="profile-avatar" src={props.userInfo.avatar_url} />
     <div className="profile-text">
       <a className="profile-link" href={props.userInfo.html_url}>
         <h6 className="profile-login">{props.userInfo.login}</h6>
         <p className="profile-public-repos">Public repos: {props.userInfo.public_repos}</p>
-        <p className="profile-followers">Followers: {props.userInfo.followers}</p>
+        <button className="profile-visit-btn">Visit Profile</button>
       </a>
     </div>
   </div>
