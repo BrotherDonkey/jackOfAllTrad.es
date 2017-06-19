@@ -6,8 +6,6 @@ import React from 'react';
 
 const Portfolio = (props) => {
 
-  console.log(props.repos);
-
   const githubRepos = props.repos.map((repo, index) =>{
     return (
       <div className="stack-cont" key={repo.id}>

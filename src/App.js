@@ -10,16 +10,12 @@ import {
 
 
 //import app components
-import Home from './components/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
 import Writing from './components/Writing';
 import FileNotFound from './components/FileNotFound';
 import WebDev2 from './components/WebDev2';
-
-
-
 
 
 //import styles
@@ -35,7 +31,7 @@ class App extends Component {
                  <Header />
                  <div className="content-cont">
                    <Switch>
-                     <Route exact path="/" component={Home} />
+                     <Route exact path="/" component={About} />
                      <Route path="/about" component={About} />
                      <Route path="/webdev" component={WebDev2} />
                      <Route path="/writing" component={Writing} />
