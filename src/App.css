@@ -537,11 +537,14 @@ more colors
     margin: 15px 0;
     border-radius: 5px; }
   .profile-avatar {
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     margin: 5px;
     border-radius: 50%;
     border: 2px solid #124e78; }
+  .profile-text {
+    margin: 0 5px;
+    max-width: 60%; }
   .profile-link {
     text-decoration: none;
     display: flex;
@@ -557,7 +560,8 @@ more colors
     border-radius: 5px; }
   .profile-links-cont {
     width: 100%;
-    margin-top: 10px; }
+    margin-top: 10px;
+    border-bottom: 1px solid #124e78; }
   .profile-links-headline {
     text-align: center;
     padding: 0; }
@@ -570,7 +574,32 @@ more colors
     transition: all .5s ease-in; }
   .profile-links-list-item p:after {
     transition: all .5s ease-in;
-    content: " \1F517 "; } }
+    content: " \1F517 "; }
+  .stack-title.portfolio-title {
+    font-size: 1.1rem; }
+  .stack-desc.portfolio-desc {
+    font-size: .8rem; }
+  .portfolio-github-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+  .portfolio-inline-github-logo {
+    display: inline;
+    height: 1.5rem;
+    margin-top: .1rem;
+    padding: 0; }
+  .stack-icon-cont.portfolio-icon-cont {
+    margin: 0 0 20px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 1px solid #124e78; }
+  .portfolio-language {
+    text-align: center; }
+  .portfolio-language em {
+    font-size: 1.1rem; } }
 
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
@@ -600,7 +629,8 @@ more colors
     flex-direction: row;
     justify-content: space-around; }
   .profile-links-cont {
-    max-width: 45%; }
+    max-width: 45%;
+    border-bottom: none; }
   .profile-cont {
     max-width: 45%; }
   .profile-avatar {
@@ -624,3 +654,8 @@ more colors
     width: 175px; } }
 
 /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .stack-title.portfolio-title {
+    font-size: 1.4rem; }
+  .stack-desc.portfolio-desc {
+    font-size: .9rem; } }

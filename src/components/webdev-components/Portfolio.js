@@ -10,15 +10,12 @@ const Portfolio = (props) => {
     return (
       <div className="stack-cont" key={repo.id}>
         <div className="stack-header-background">
-          <h5 className="stack-title">{ repo.name }</h5>
-          <p className="stack-desc">{repo.description}</p>
+          <h5 className="stack-title portfolio-title">{ repo.name }</h5>
+          <p className="stack-desc portfolio-desc">{repo.description}</p>
         </div>
-        <div className="stack-icon-cont">
-          <p className="stack-desc">{repo.description}</p>
-          <a href={repo.html_url} target="_blank" rel="noopener noreferrer">Visit {repo.name} on GitHub</a>
-          <br />
-          <hr />
-          <p>Language: {repo.language}</p>
+        <div className="stack-icon-cont portfolio-icon-cont">
+          <p className="portfolio-language">Predominant Language: <em>{repo.language || "Mixture"}</em></p>
+          <a className="portfolio-github-link" href={repo.html_url} target="_blank" rel="noopener noreferrer">Visit {repo.name} on <img className="portfolio-inline-github-logo" alt="GitHub Logo" src="/icons/png/github.png"/></a>
         </div>
       </div>
     );

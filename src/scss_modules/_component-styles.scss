@@ -107,9 +107,10 @@
     // border: 1px solid $primary-color;
     }
 
+
   .profile-avatar {
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     margin: 5px;
     border-radius: 50%;
     border: 2px solid $primary-color;
@@ -117,6 +118,8 @@
     }
 
   .profile-text {
+    margin: 0 5px;
+    max-width: 60%;
     }
 
   .profile-link {
@@ -142,6 +145,7 @@
   .profile-links-cont {
     width: 100%;
     margin-top: 10px;
+    border-bottom: 1px solid $primary-color;
   }
 
   .profile-links-headline {
@@ -165,6 +169,43 @@
     content: " \1F517 ";
   }
 
+  .stack-title.portfolio-title {
+    font-size: 1.1rem;
+  }
+
+  .stack-desc.portfolio-desc {
+    font-size: .8rem;
+  }
+
+  .portfolio-github-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    text-align: center;
+    @include push--auto;
+  }
+
+  .portfolio-inline-github-logo {
+    display: inline;
+    height: 1.5rem;
+    margin-top: .1rem;
+    padding: 0;
+  }
+
+  .stack-icon-cont.portfolio-icon-cont {
+    margin: 0 0 20px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  .portfolio-language {
+    text-align: center;
+  }
+
+  .portfolio-language em {
+    font-size: 1.1rem;
+  }
 
 
 
@@ -238,6 +279,7 @@
 
   .profile-links-cont {
     max-width: 45%;
+    border-bottom: none;
   }
 
 
@@ -316,13 +358,20 @@
     .profile-avatar {
         height: 175px;
         width: 175px;
-
-        }
+    }
 
 
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+
+  .stack-title.portfolio-title {
+    font-size: 1.4rem;
+  }
+
+  .stack-desc.portfolio-desc {
+    font-size: .9rem;
+  }
 
 }
