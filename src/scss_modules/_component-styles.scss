@@ -86,6 +86,23 @@
     top: -50px;
   }
 
+  .writing-cont {
+
+  }
+
+  .writing-link {
+    display: block;
+    padding: 5px 10px;
+    margin: 0 0 10px 0;
+    border: 1px solid $primary-color;
+    border-radius: 2px;
+  }
+
+  .writing-link:hover {
+    color: $tertiary-color;
+    border: 1px solid $tertiary-color;
+    @include box-shadow-standard;
+  }
 
   // STYLES RELATING TO THE API-FETCHED GITHUB INFO ON THE /WEBDEV/PORTFOLIO PageTitle
 
@@ -103,7 +120,7 @@
     align-items: center;
     margin: 15px 0;
     // background-color: $yellow;
-    border-radius: 5px;
+    border-radius: 2px;
     // border: 1px solid $primary-color;
     }
 
@@ -132,14 +149,15 @@
 
   .profile-login {
       padding: 0;
-      font-size: 1.1em;
+      margin: 5px 0;
+      font-size: 1.4em;
     }
 
   .profile-visit-btn {
     background-color: $primary-color;
     color: $white;
     border: 1px solid $primary-color;
-    border-radius: 5px;
+    border-radius: 2px;
   }
 
   .profile-links-cont {
@@ -178,18 +196,31 @@
   }
 
   .portfolio-github-link {
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 2px;
     text-decoration: none;
     font-size: 1.1rem;
     padding: 5px 10px;
     text-align: center;
+    margin: 10px 0;
     @include push--auto;
+    transition: border 1s ease-in;
+  }
+
+  .portfolio-github-link:hover {
+    color: $tertiary-color;
+    border: 1px solid $tertiary-color;
+    @include box-shadow-standard;
+
   }
 
   .portfolio-inline-github-logo {
     display: inline;
     height: 1.5rem;
-    margin-top: .1rem;
+    margin: .3rem 0;
     padding: 0;
+
   }
 
   .stack-icon-cont.portfolio-icon-cont {
@@ -226,6 +257,7 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
+
   .stack-cont {
     margin: 25px 0 0 0;
     display: flex;
@@ -235,6 +267,7 @@
     justify-content: space-around;
     align-items: center;
   }
+
 
   .stack-header-background {
     width: 250px;
@@ -254,6 +287,16 @@
     margin: 0;
   }
 
+  .stack-cont.portfolio-stack-cont {
+    justify-content: center;
+  }
+
+
+  .stack-icon-cont.portfolio-icon-cont {
+    border: none;
+    width: 50%;
+  }
+
   .stack-icon-sub-cont {
     max-width: 25%;
     // height: ;
@@ -269,6 +312,16 @@
   .stack-icon-desc {
     // display: none; // still on display none
   }
+
+  .writing-link {
+    display: block;
+    max-width: 40%;
+    @include push--auto;
+  }
+
+  .writing-link:hover {
+  }
+
 
   // styles for webdev/portfolio route github user info
 

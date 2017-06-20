@@ -70,7 +70,7 @@ class WebDev2 extends React.Component {
           icon={<BrowserSVG className="page-icon" height="75" width="75" />}
           title="Web Dev" />
           <SubNav match={this.props.match} />
-
+          
         <CSSTransitionGroup
             component="div"
             className="page-summary-transition"
