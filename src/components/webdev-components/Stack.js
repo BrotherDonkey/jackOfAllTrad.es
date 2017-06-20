@@ -16,7 +16,7 @@ const Stack = (props, {match}) => {
     return (
         <div className="stack-icon-sub-cont" key={`${index}${icon.name}`} >
           <p className="stack-icon-name">{icon.name}</p>
-          <img src={`${icon.imgPath}`} alt={`${icon.name}`} className="stack-icon" onClick={showDesc} />
+          <img src={`${process.env.PUBLIC_URL}${icon.imgPath}`} alt={`${icon.name}`} className="stack-icon" onClick={showDesc} />
           <p className="stack-icon-desc">{icon.desc}</p>
         </div>
     );
@@ -26,7 +26,7 @@ const Stack = (props, {match}) => {
     return (
       <div className="stack-icon-sub-cont" key={`${index}${icon.name}`} >
         <p className="stack-icon-name">{icon.name}</p>
-        <img src={`${icon.imgPath}`} alt={`${icon.name}`} className="stack-icon" onClick={showDesc}  />
+        <img src={`${process.env.PUBLIC_URL}${icon.imgPath}`} alt={`${icon.name}`} className="stack-icon" onClick={showDesc}  />
         <p className="stack-icon-desc">{icon.desc}</p>
       </div>
     );
@@ -36,7 +36,7 @@ const Stack = (props, {match}) => {
     return (
       <div className="stack-icon-sub-cont" key={`${index}${icon.name}`} >
         <p className="stack-icon-name">{icon.name}</p>
-        <img src={`${icon.imgPath}`} alt={`${icon.name}`} className="stack-icon" onClick={showDesc} />
+        <img src={`${process.env.PUBLIC_URL}${icon.imgPath}`} alt={`${icon.name}`} className="stack-icon" onClick={showDesc} />
         <p className="stack-icon-desc">{icon.desc}</p>
       </div>
     );
