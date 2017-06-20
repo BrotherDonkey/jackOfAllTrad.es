@@ -9,6 +9,7 @@
 
     .outer-cont {
       // background-image: linear-gradient(to top, $secondary-color-80, $primary-color-80), url("/images/anime-sky.jpg");
+      background-image: -webkit-gradient(linear, left bottom, left top, from($tertiary-color-80), to($primary-color-80)), url("/images/anime-sky.jpg");
       background-image: linear-gradient(to top, $tertiary-color-80, $primary-color-80), url("/images/anime-sky.jpg");
       min-height: 100vh;
       background-size: cover;
@@ -39,9 +40,15 @@
     }
 
     .page-title-cont {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       width: 100%;
       text-align: center;
     }
@@ -51,8 +58,13 @@
     }
 
     .card-cont {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
 
     .card-link,.card-inner-link {
@@ -116,9 +128,15 @@
     }
 
     .svg-flex-cont,.svg-flex-cont-2,.svg-flex-cont-3,.svg-flex-cont-4,.svg-flex-cont-5,.svg-flex-cont-6 {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
       width: 98%;
       padding: 5px;
       margin: 0;
@@ -213,7 +231,10 @@
 @media only screen and (min-width : 768px) {
 
   .card-cont {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
 
@@ -253,7 +274,10 @@
   }
 
   .card-cont {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
 
@@ -285,9 +309,15 @@
   }
 
   .svg-flex-cont,.svg-flex-cont-2,.svg-flex-cont-3,.svg-flex-cont-4,.svg-flex-cont-5,.svg-flex-cont-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 98%;
     padding: 5px;
     margin-top: 15px;
