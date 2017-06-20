@@ -7,7 +7,7 @@ import BouncyTitle from './BouncyTitle';
 
 const Header = () => (
       <nav className="outer-nav">
-          <BouncyTitle title={"w.b.bjorn"} />
+          <BouncyTitle title={"will bjorn"} />
         <div className="nav-cont">
           <NavLink to="/" exact id="about-nav-link" className="nav-link two">
             About
