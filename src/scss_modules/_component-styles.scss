@@ -86,6 +86,160 @@
     top: -50px;
   }
 
+  .writing-cont {
+
+  }
+
+  .writing-link {
+    display: block;
+    padding: 5px 10px;
+    margin: 0 0 10px 0;
+    border: 1px solid $primary-color;
+    border-radius: 2px;
+  }
+
+  .writing-link:hover {
+    color: $tertiary-color;
+    border: 1px solid $tertiary-color;
+    @include box-shadow-standard;
+  }
+
+  // STYLES RELATING TO THE API-FETCHED GITHUB INFO ON THE /WEBDEV/PORTFOLIO PageTitle
+
+  .profile-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+    // background-color: $yellow;
+    border-radius: 2px;
+    // border: 1px solid $primary-color;
+    }
+
+
+  .profile-avatar {
+    width: 65px;
+    height: 65px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid $primary-color;
+
+    }
+
+  .profile-text {
+    margin: 0 5px;
+    max-width: 60%;
+    }
+
+  .profile-link {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+  .profile-login {
+      padding: 0;
+      margin: 5px 0;
+      font-size: 1.4em;
+    }
+
+  .profile-visit-btn {
+    background-color: $primary-color;
+    color: $white;
+    border: 1px solid $primary-color;
+    border-radius: 2px;
+  }
+
+  .profile-links-cont {
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  .profile-links-headline {
+    text-align: center;
+    padding: 0;
+  }
+
+  .profile-links-list-item {
+    color: $black;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .profile-links-list-item p {
+    line-height: 1.5rem;
+    transition: all .5s ease-in;
+  }
+
+  .profile-links-list-item p:after {
+    transition: all .5s ease-in;
+    content: " \1F517 ";
+  }
+
+  .stack-title.portfolio-title {
+    font-size: 1.1rem;
+  }
+
+  .stack-desc.portfolio-desc {
+    font-size: .8rem;
+  }
+
+  .portfolio-github-link {
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 10px 0;
+    @include push--auto;
+    transition: border 1s ease-in;
+  }
+
+  .portfolio-github-link:hover {
+    color: $tertiary-color;
+    border: 1px solid $tertiary-color;
+    @include box-shadow-standard;
+
+  }
+
+  .portfolio-inline-github-logo {
+    display: inline;
+    height: 1.5rem;
+    margin: .3rem 0;
+    padding: 0;
+
+  }
+
+  .stack-icon-cont.portfolio-icon-cont {
+    margin: 0 0 20px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  .portfolio-language {
+    text-align: center;
+  }
+
+  .portfolio-language em {
+    font-size: 1.1rem;
+  }
+
+
+
 }
 
 
@@ -103,6 +257,7 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
+
   .stack-cont {
     margin: 25px 0 0 0;
     display: flex;
@@ -111,8 +266,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
   }
+
 
   .stack-header-background {
     width: 250px;
@@ -132,6 +287,16 @@
     margin: 0;
   }
 
+  .stack-cont.portfolio-stack-cont {
+    justify-content: center;
+  }
+
+
+  .stack-icon-cont.portfolio-icon-cont {
+    border: none;
+    width: 50%;
+  }
+
   .stack-icon-sub-cont {
     max-width: 25%;
     // height: ;
@@ -147,6 +312,66 @@
   .stack-icon-desc {
     // display: none; // still on display none
   }
+
+  .writing-link {
+    display: block;
+    max-width: 40%;
+    @include push--auto;
+  }
+
+  .writing-link:hover {
+  }
+
+
+  // styles for webdev/portfolio route github user info
+
+  .profile-top {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .profile-links-cont {
+    max-width: 45%;
+    border-bottom: none;
+  }
+
+
+  .profile-cont {
+    max-width: 45%;
+
+    }
+
+  .profile-avatar {
+    height: 125px;
+    width: 125px;
+
+    }
+
+  .profile-text {
+
+    }
+
+  .profile-link {
+
+
+    }
+
+  .profile-login {
+
+    }
+
+  .profile-public-repos {
+
+    }
+
+  .profile-followers {
+
+    }
+
+  .profile-visit-btn {
+
+  }
+
 
 
 
@@ -183,10 +408,23 @@
       // display: none; // still on display none
     }
 
+    .profile-avatar {
+        height: 175px;
+        width: 175px;
+    }
+
 
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+
+  .stack-title.portfolio-title {
+    font-size: 1.4rem;
+  }
+
+  .stack-desc.portfolio-desc {
+    font-size: .9rem;
+  }
 
 }

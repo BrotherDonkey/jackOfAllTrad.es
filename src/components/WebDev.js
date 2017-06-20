@@ -21,6 +21,33 @@ const WebDev = ({match}) => {
 
     const data = stackData;
 
+    let githubRepos, githubUserInfo;
+
+    fetch("https://api.github.com/users/BrotherDonkey")
+        .then((res)=>{
+          if (res.ok)
+            return res.json();
+            throw new Error('Some problem with fetch');
+          })
+        .then((json)=>{ githubUserInfo = json
+        })
+        .catch((error) => {
+          console.log(`There was an error getting user info: ${error}`)
+        });
+
+    fetch("https://api.github.com/users/BrotherDonkey/repos")
+        .then((res)=>{
+          if (res.ok)
+            return res.json();
+            throw new Error('Some problem with fetch');
+          })
+        .then((json)=>{ githubRepos = json
+        })
+        .catch((error) => {
+          console.log(`There was an error getting repo info: ${error}`)
+        });
+
+
     return (
       <div className="main-content">
         <PageTitle
@@ -41,7 +68,7 @@ const WebDev = ({match}) => {
 
           <Route exact path={`${match.path}`} render={() => <Redirect to={`${match.path}/stack`} />} />
           <Route path={`${match.path}/stack`} render={() => <Stack title={data.subpageTitle} frontEnd={data.frontEnd} backEnd={data.backEnd} tools={data.tools}/> } />
-          <Route path={`${match.path}/portfolio`} render={() => <Portfolio title="Portfolio" /> } />
+          <Route path={`${match.path}/portfolio`} render={() => <Portfolio title="Portfolio" note={`the following does work because it needs to set the state when it gets the info`} userInfo={githubUserInfo} repos={githubRepos} /> } />
 
         </CSSTransitionGroup>
 

@@ -12,8 +12,6 @@ import Bear2svg from './svg-components/Bear2svg';
 import aboutData from '../data/aboutData';
 
 
-
-
 class About extends React.Component {
   constructor({match}){
     super();
@@ -38,7 +36,7 @@ class About extends React.Component {
             transitionLeaveTimeout={500}
             transitionAppear={true}
             transitionAppearTimeout={500}>
-            <p>W.B. Bjorn is a web developer, former-teacher, shortstoryist, traveller, novelist, and scifi and fantasy aficionado. Raised in Idaho, currently residing in Seattle, he has lived in Wuxi, Shanghai, Taipei, Nagoya and Oxford.</p>
+            <p>I am a web developer. I'm passionate about creating beautiful, functional and fun websites. Raised in Idaho, currently residing in Seattle, I have lived in Wuxi, Shanghai, Taipei, Nagoya and Oxford. To get ahold of me, please <a href="mailto:willbjorn@gmail.com">email at willbjorn@gmail.com</a>.</p>
         </CSSTransitionGroup>
 
         <div className="card-cont">

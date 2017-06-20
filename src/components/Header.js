@@ -9,7 +9,7 @@ const Header = () => (
       <nav className="outer-nav">
           <BouncyTitle title={"w.b.bjorn"} />
         <div className="nav-cont">
-          <NavLink to="/about" id="about-nav-link" className="nav-link two">
+          <NavLink to="/" exact id="about-nav-link" className="nav-link two">
             About
           </NavLink>
           <NavLink to="/webdev" id="webdev-nav-link" className="nav-link three">
