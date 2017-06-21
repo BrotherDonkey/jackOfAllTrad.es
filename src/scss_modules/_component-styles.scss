@@ -17,15 +17,14 @@
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .stack-header-background {
@@ -34,14 +33,14 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 15px 0;
     background: $yellow;
     border-radius: 50%;
@@ -70,28 +69,29 @@
     display: flex;
     position: relative;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: 25px;
     height: 100%;
   }
 
   .stack-icon-sub-cont {
-    max-width: 50%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    box-sizing:border-box
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+    justify-content: center;
     @include push--auto;
     cursor: pointer;
     -webkit-transition: 1s ease-in;
@@ -105,7 +105,6 @@
 
   .stack-icon {
     width: 94%;
-    height: auto;
     z-index: 2;
   }
 
@@ -266,7 +265,6 @@
     color: $tertiary-color;
     border: 1px solid $tertiary-color;
     @include box-shadow-standard;
-
   }
 
   .portfolio-inline-github-logo {
@@ -274,19 +272,17 @@
     height: 1.5rem;
     margin: .3rem 0;
     padding: 0;
-
   }
 
+  // .must change stack-icon-cont and portfolio cont to completely different values
+
   .stack-icon-cont.portfolio-icon-cont {
-    margin: 0 0 20px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-direction: column;
+    flex-direction: column;
     border-bottom: 1px solid $primary-color;
+    margin: 0 0 20px 0;
   }
 
   .portfolio-language {
@@ -296,9 +292,6 @@
   .portfolio-language em {
     font-size: 1.1rem;
   }
-
-
-
 }
 
 
