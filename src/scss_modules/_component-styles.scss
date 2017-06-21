@@ -10,36 +10,20 @@
   }
 
   .stack-cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 0;
+    margin: 0;
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    // justify-content: center;
     align-items: center;
+
   }
 
   .stack-header-background {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     margin: 15px 0;
     background: $yellow;
@@ -64,37 +48,31 @@
   }
 
   .stack-icon-cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: 25px;
-    height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      // position: relative;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 25px;
+      min-height: 100%;
   }
 
   .stack-icon-sub-cont {
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    box-sizing:border-box
-     -webkit-box-pack: center;
-     -ms-flex-pack: center;
+    max-width: 50%;
+    // width: 100%;
     justify-content: center;
-    @include push--auto;
     cursor: pointer;
-    -webkit-transition: 1s ease-in;
     transition: 1s ease-in;
   }
 
@@ -105,6 +83,7 @@
 
   .stack-icon {
     width: 94%;
+    height: auto;
     z-index: 2;
   }
 
@@ -138,29 +117,16 @@
 
   .profile-top {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 
   .profile-cont {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     margin: 15px 0;
     // background-color: $yellow;
     border-radius: 2px;
@@ -184,16 +150,9 @@
 
   .profile-link {
       text-decoration: none;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      flex-direction: column;
+      justify-content: center;
 
     }
 
@@ -229,12 +188,10 @@
 
   .profile-links-list-item p {
     line-height: 1.5rem;
-    -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
   }
 
   .profile-links-list-item p:after {
-    -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
     content: " \1F517 ";
   }
@@ -257,7 +214,6 @@
     text-align: center;
     margin: 10px 0;
     @include push--auto;
-    -webkit-transition: border 1s ease-in;
     transition: border 1s ease-in;
   }
 
@@ -265,6 +221,7 @@
     color: $tertiary-color;
     border: 1px solid $tertiary-color;
     @include box-shadow-standard;
+
   }
 
   .portfolio-inline-github-logo {
@@ -272,17 +229,14 @@
     height: 1.5rem;
     margin: .3rem 0;
     padding: 0;
+
   }
 
-  // .must change stack-icon-cont and portfolio cont to completely different values
-
   .stack-icon-cont.portfolio-icon-cont {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    border-bottom: 1px solid $primary-color;
     margin: 0 0 20px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 1px solid $primary-color;
   }
 
   .portfolio-language {
@@ -292,12 +246,19 @@
   .portfolio-language em {
     font-size: 1.1rem;
   }
+
+
+
 }
 
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+
+  //--------------------------------------------------------------------------------
+  //-------------------- web dev comp styles ---------------------------------------
+  //-------------------------- small screens ---------------------------------------
 
 
 }
@@ -308,20 +269,12 @@
 
   .stack-cont {
     margin: 25px 0 0 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 0;
     width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 
 
@@ -336,23 +289,15 @@
 
 
   .stack-icon-cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    position: relative;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    // position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin: 0;
   }
 
   .stack-cont.portfolio-stack-cont {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 
 
@@ -374,6 +319,7 @@
   }
 
   .stack-icon-desc {
+    // display: none; // still on display none
   }
 
   .writing-link {
@@ -389,12 +335,8 @@
   // styles for webdev/portfolio route github user info
 
   .profile-top {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .profile-links-cont {
@@ -450,29 +392,17 @@
 
 
     .stack-icon-cont {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       position: relative;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
       height: 100%;
     }
 
     .stack-icon-sub-cont {
       max-width: 15%;
-      // height: ;
-      // width: 100%;
     }
 
     .stack-icon-name {
@@ -482,13 +412,13 @@
     }
 
     .stack-icon-desc {
+
     }
 
     .profile-avatar {
         height: 175px;
         width: 175px;
     }
-
 
 }
 

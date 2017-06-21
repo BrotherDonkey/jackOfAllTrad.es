@@ -95,7 +95,6 @@ p {
     margin: 5px;
     padding: 5px; }
   .outer-cont {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(110, 14, 10, 0.8)), to(rgba(18, 78, 120, 0.8))), url("/images/anime-sky.jpg");
     background-image: linear-gradient(to top, rgba(110, 14, 10, 0.8), rgba(18, 78, 120, 0.8)), url("/images/anime-sky.jpg");
     min-height: 100vh;
     background-size: cover; }
@@ -117,26 +116,15 @@ p {
   .page-summary p {
     padding: 5px; }
   .page-title-cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
     text-align: center; }
   .page-title-cont h1, h2, h3, h4, h5, h6 {
     color: #124e78; }
   .card-cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column; }
   .card-link, .card-inner-link {
     text-decoration: none;
@@ -189,14 +177,8 @@ p {
     padding-bottom: 10px;
     min-height: 23vh; }
   .svg-flex-cont, .svg-flex-cont-2, .svg-flex-cont-3, .svg-flex-cont-4, .svg-flex-cont-5, .svg-flex-cont-6 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     width: 98%;
     padding: 5px;
@@ -238,9 +220,6 @@ p {
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .card-cont {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row; }
   .card-upper-section {
     min-height: 15vh; }
@@ -260,9 +239,6 @@ p {
     margin: 25px;
     padding: 25px; }
   .card-cont {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row; }
   .card-upper-section {
     min-height: 20vh; }
@@ -281,14 +257,8 @@ p {
     margin-left: auto;
     margin-right: auto; }
   .svg-flex-cont, .svg-flex-cont-2, .svg-flex-cont-3, .svg-flex-cont-4, .svg-flex-cont-5, .svg-flex-cont-6 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     width: 98%;
     padding: 5px;
@@ -559,34 +529,16 @@ p {
     margin: 5px;
     width: calc(100%-10px); }
   .stack-cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 0;
+    margin: 0;
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center; }
   .stack-header-background {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     margin: 15px 0;
     background: #f2bb05;
@@ -608,7 +560,6 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-orient: horizontal;
@@ -622,18 +573,11 @@ p {
     -ms-flex-pack: center;
     justify-content: center;
     margin-top: 25px;
-    height: 100%; }
+    min-height: 100%; }
   .stack-icon-sub-cont {
     max-width: 50%;
-    height: auto;
-    width: 100%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     cursor: pointer;
-    -webkit-transition: 1s ease-in;
     transition: 1s ease-in; }
   .stack-icon-name {
     text-align: center;
@@ -662,26 +606,13 @@ p {
     box-shadow: 0px 0px 10px 2px rgba(75, 75, 75, 0.5); }
   .profile-top {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column; }
   .profile-cont {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     margin: 15px 0;
     border-radius: 2px; }
@@ -696,15 +627,8 @@ p {
     max-width: 60%; }
   .profile-link {
     text-decoration: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center; }
   .profile-login {
     padding: 0;
@@ -728,10 +652,8 @@ p {
     text-decoration: none; }
   .profile-links-list-item p {
     line-height: 1.5rem;
-    -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in; }
   .profile-links-list-item p:after {
-    -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
     content: " \1F517 "; }
   .stack-title.portfolio-title {
@@ -749,7 +671,6 @@ p {
     margin: 10px 0;
     margin-left: auto;
     margin-right: auto;
-    -webkit-transition: border 1s ease-in;
     transition: border 1s ease-in; }
   .portfolio-github-link:hover {
     color: #6e0e0a;
@@ -764,12 +685,7 @@ p {
     padding: 0; }
   .stack-icon-cont.portfolio-icon-cont {
     margin: 0 0 20px 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
     border-bottom: 1px solid #124e78; }
   .portfolio-language {
@@ -782,19 +698,11 @@ p {
 @media only screen and (min-width: 768px) {
   .stack-cont {
     margin: 25px 0 0 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 0;
     width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center; }
   .stack-header-background {
     width: 250px;
@@ -802,20 +710,11 @@ p {
   .stack-icon-cont {
     width: calc(100% - 275px); }
   .stack-icon-cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    position: relative;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     margin: 0; }
   .stack-cont.portfolio-stack-cont {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center; }
   .stack-icon-cont.portfolio-icon-cont {
     border: none;
@@ -828,11 +727,7 @@ p {
     margin-left: auto;
     margin-right: auto; }
   .profile-top {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: distribute;
     justify-content: space-around; }
   .profile-links-cont {
     max-width: 45%;
@@ -846,21 +741,11 @@ p {
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   .stack-icon-cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     height: 100%; }
   .stack-icon-sub-cont {
