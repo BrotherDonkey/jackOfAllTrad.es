@@ -74,7 +74,7 @@ const stackData = {
       {
         name : "Amazon Web Services",
         skill: 4,
-        imgPath: "/icons/png/AWS_cloud2.png",
+        imgPath: "/icons/png/awsCloud.png",
         desc: "Whether it's setting up a server or creating a RESTful APIs, I can get it done."
       }
     ]
