@@ -8,8 +8,14 @@ const Stack = (props, {match}) => {
 
   const showDesc = (e) => {
     const eTarget = e.target;
-    eTarget.style.transition = "1s ease";
-    eTarget.style.transform = "rotate(360deg)";
+    console.log(eTarget.style.transform);
+    if (eTarget.style.transform === "rotate(360deg)"){
+      eTarget.style.transition = "1s ease";
+      eTarget.style.transform = "rotate(0)";
+    } else {
+      eTarget.style.transition = "1s ease";
+      eTarget.style.transform = "rotate(360deg)";
+    }
   }
 
   const iconsFrontEnd = props.frontEnd.icons.map((icon, index) =>{
